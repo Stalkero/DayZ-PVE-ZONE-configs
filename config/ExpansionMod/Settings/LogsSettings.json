@@ -1,0 +1,16 @@
+{
+    "m_Version": 5,
+    "Safezone": 0,
+    "AdminTools": 1,
+    "ExplosionDamageSystem": 0,
+    "VehicleCarKey": 0,
+    "VehicleTowing": 0,
+    "VehicleLockPicking": 0,
+    "VehicleDestroyed": 1,
+    "MissionAirdrop": 0,
+    "AIGeneral": 0,
+    "AIPatrol": 0,
+    "AIObjectPatrol": 0,
+    "LogToScripts": 0,
+    "LogToADM": 0
+}

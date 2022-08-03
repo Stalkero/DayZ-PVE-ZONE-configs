@@ -1,0 +1,43 @@
+{
+    "SERVERNAME": "Welcome to PVE ZONE",
+    "BUTTON1NAME": "Discord",
+    "BUTTON1LINK": "https://discord.gg/QS9rTJSk7f",
+    "BUTTON2NAME": "",
+    "BUTTON2LINK": "",
+    "BUTTON3NAME": "",
+    "BUTTON3LINK": "",
+    "BUTTONTAB0NAME": "Server Info/Rules",
+    "BUTTONTAB1NAME": "Base building rules",
+    "BUTTONTAB2NAME": "Some more info",
+    "BUTTONTAB3NAME": "",
+    "DISPLAYPLAYERINFO": 1,
+    "DISPLAYPLAYERTAB": 1,
+    "sServerTab0": [
+        "Server has disabled contaminated zones",
+        "Only PVE is allowed. Except AI enemies",
+        "Be kind to everyone",
+        "English only on chat",
+        "No glitching/hacking etc",
+        "Do not ask for money",
+        "The same goes for any item",
+        "DO NOT STEAL TRASH CANS",
+        "Play as IRL as possible",
+        "Do not raid bases"
+    ],
+    "sServerTab1": [
+        "There's no limit regarding base size",
+        "Base building is allowed everywhere",
+        "EXCEPT",
+        "Military Zones (ex. Tissy, Green Mtn military base, Kamensk)",
+        "Trader zones. Building is allowed 1.2km away from any trader"
+    ],
+    "sServerTab2": [
+        "Everyone could be wrong at any time even Admin",
+        "The server is trying to be as friendly as it could go",
+        "If something goes wrong with server for example missing trader items please reach out to me on Discord",
+        "Feel free to ask"
+    ],
+    "sServerTab3": [
+        ""
+    ]
+}

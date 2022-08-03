@@ -1,0 +1,113 @@
+{
+    "ModVersion": "2.11",
+    "MenuDelay": 1.0,
+    "startCurrency": 10000,
+    "maxCurrency": 1000000000,
+    "IsClanAccountActive": 0,
+    "CostsToCreateClan": 15000,
+    "CostsToInviteAnPlayer": 1000,
+    "MaxClanAccountLimit": 200000,
+    "MaxPlayersInClan": -1,
+    "MinAmountToTransfer": 1000,
+    "TransferfeesInProcent": 3,
+    "IsRobEventActive": 0,
+    "MinPlayersForRob": 5,
+    "MinMoneyForRob": 1000,
+    "MaxMoneyForRob": 5000,
+    "TimeInSecToRobATM": 120,
+    "RobMessagesActive": 1,
+    "PayCheckValue": 500,
+    "PayCheckTickTime": 0,
+    "IsPayCheckMessageActive": 1,
+    "CanAddPayCheckInSafezone": 1,
+    "PayCheckMessage": "%Amount% added to your bank account! stay active to earn more money!",
+    "MinPlayersForPayCheck": 1,
+    "CanAddToFullAcc": 0,
+    "NeedsBankCardToOpenMenu": 0,
+    "m_LoggingSettings": {
+        "m_LogMode": 0,
+        "m_LogDepositOwnBank": 0,
+        "m_LogWithdraw": 0,
+        "m_LogClanDeposit": 0,
+        "m_LogClanWithdraw": 0,
+        "m_LogCreateClanAccount": 0,
+        "m_LogDeleteClanAccount": 0,
+        "m_LogInviteMember": 0,
+        "m_LogUpdatePermission": 0
+    },
+    "m_DiscordWebhook": {
+        "m_UseWebhook": 1,
+        "m_WebhookURL": "Here the full URL!",
+        "m_LogDepositToDiscord": 0,
+        "m_LogWithdrawToDiscord": 0,
+        "m_LogClanDepositToDiscord": 0,
+        "m_LogClanWithdrawToDiscord": 0,
+        "m_LogClanCreateToDiscord": 0,
+        "m_LogClanInviteMemberToDiscord": 0,
+        "m_LogClanRemoveMemberToDiscord": 0,
+        "m_LogClanUpdatePermissionToDiscord": 0,
+        "m_LogClanKickMemberToDiscord": 0,
+        "m_AdminLogUpdateServerConfig": 1,
+        "m_AdminLogUpdatePlayerData": 1,
+        "m_AdminLogUpdateClanData": 0,
+        "m_AdminLogUseMisc": 0
+    },
+    "ATM": [
+        {
+            "ATMSName": "KR_ATMBlack",
+            "Position": [
+                3708.35009765625,
+                402.0119934082031,
+                5980.02001953125
+            ],
+            "Direction": [
+                90.0,
+                0.0,
+                0.0
+            ],
+            "CanBeRobbed": 0,
+            "RobMessage": ""
+        },
+        {
+            "ATMSName": "KR_BankingATM",
+            "Position": [
+                8361.9169921875,
+                292.04620361328127,
+                5992.88330078125
+            ],
+            "Direction": [
+                9.507978439331055,
+                0.0,
+                -0.0
+            ],
+            "CanBeRobbed": 0,
+            "RobMessage": "ATM Gets Robbed near Novaya Petrovka from Player: %PlayerName%"
+        }
+    ],
+    "BankingCurrency": [
+        {
+            "CurrencyName": "MoneyRuble100",
+            "CurrencyValue": 100
+        },
+        {
+            "CurrencyName": "MoneyRuble50",
+            "CurrencyValue": 50
+        },
+        {
+            "CurrencyName": "MoneyRuble25",
+            "CurrencyValue": 25
+        },
+        {
+            "CurrencyName": "MoneyRuble10",
+            "CurrencyValue": 10
+        },
+        {
+            "CurrencyName": "MoneyRuble5",
+            "CurrencyValue": 5
+        },
+        {
+            "CurrencyName": "MoneyRuble1",
+            "CurrencyValue": 1
+        }
+    ]
+}

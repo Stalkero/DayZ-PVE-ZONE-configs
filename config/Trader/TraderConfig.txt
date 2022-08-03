@@ -1,0 +1,2469 @@
+		/////////////////////////////////////////////////////////////////////////////////////////////////
+        //                                                                                             //
+        //      Need Help? The Trader Mod has its own Channel on the DayZ Modders Discord Server!      //
+        //                                                                                             //
+        //      Only Singleline Comments work. Don't use Multiline Comments!                           //
+        //      /* THIS COMMENT WILL CRASH THE SERVER! */                                              //
+        //      // THIS COMMENT WORKS!                                                                 //
+        //                                                                                             //
+        /////////////////////////////////////////////////////////////////////////////////////////////////
+
+<CurrencyName> #tm_ruble							// Currency Name (Only used for the Text in the upper right Corner of the Trader Menu)
+	<Currency> MoneyRuble1, 	1					// Currency Classname, Currency Money Value
+	<Currency> MoneyRuble5, 	5
+	<Currency> MoneyRuble10, 	10
+	<Currency> MoneyRuble25, 	25
+	<Currency> MoneyRuble50, 	50
+	<Currency> MoneyRuble100, 	100
+
+
+<Trader> Consume Trader								// Trader Name (first Trader has ID = 0, second Trader has ID = 1, and so on..)
+	<Category> Vegetables							// Category Name
+		CaninaBerry,			*,		1,		-1	// Item Classname, Quantity, Buyvalue, Sellvalue
+		SambucusBerry,			*,		1,		-1	// Quantity * means max value; Quantity V means Vehicle; Quantity VNK means Vehicle without Key; Quantity M means Magazine; Quantity W means Weapon; Quantity S means Steack Meat; Quantity K means Key Duplication
+		Plum,					*,		1,		-1	// Buyvalue -1 means it can not be bought
+		Kiwi,					*,		1,		-1	// Sellvalue -1 means it can not be selled
+		Apple,					*,		1,		-1
+		Pear,					*,		1,		-1
+		Orange,					*,		1,		-1
+		Banana,					*,		1,		-1
+		Tomato,					*,		1,		-1
+		Potato,					*,		1,		-1
+		GreenBellPepper,		*,		1,		-1
+		Zucchini,				*,		3,		1
+		Pumpkin,				*,		8,		3
+		AgaricusMushroom,		*,		2,		1
+		AmanitaMushroom,		*,		2,		1
+		LactariusMushroom,		*,		2,		1
+		MacrolepiotaMushroom,	*,		2,		1
+		PsilocybeMushroom,		*,		2,		1
+		AuriculariaMushroom,	*,		2,		1
+		BoletusMushroom,		*,		2,		1
+		PleurotusMushroom,		*,		2,		1
+	
+	<Category> Packaged Food
+		PowderedMilk,			*,		1,		-1
+		BoxCerealCrunchin,		*,		2,		1
+		Rice,					*,		3,		1
+		Marmalade,				*,		3,		1
+		PeachesCan,				*,		4,		2
+		SardinesCan,			*,		4,		2
+		TunaCan,				*,		4,		2
+		SpaghettiCan,			*,		5,		2
+		BakedBeansCan,			*,		5,		2
+		TacticalBaconCan,		*,		5,		3		
+		
+	<Category> Meat
+		ChickenBreastMeat,		S,		2,		1
+		GoatSteakMeat,			S,		3,		1
+		SheepSteakMeat,			S,		3,		1
+		PigSteakMeat,			S,		4,		2
+		BoarSteakMeat,			S,		4,		2
+		WolfSteakMeat,			S,		4,		2
+		DeerSteakMeat,			S,		5,		2
+		CowSteakMeat,			S,		5,		2	
+		Sardines,				S,		7,		4
+		Carp,					S,		10,		5
+		Mackerel,				S,		10,		5
+		
+	<Category> Animal Parts
+		Bone,					*,		2,		1
+		Lard,					*,		2,		1
+		Guts,					*,		2,		1
+		SmallGuts,				*,		2,		1
+		
+	<Category> Drinks
+		SodaCan_Cola, 			*,		2, 		1
+		SodaCan_Kvass, 			*,		2, 		1
+		SodaCan_Pipsi, 			*,		2, 		1
+		SodaCan_Spite, 			*,		2, 		1
+		WaterBottle,			*,		5,		2
+		Canteen,				*,		8,		4
+		Vodka,					*,		12,		8
+		
+	<Category> Medical Supplies
+		//Rag,					1,		1,		-1
+		BandageDressing,		2,		3,		1
+		BloodTestKit,			*,		5,		2
+		//InjectionVial,		*,		5, 		2
+		Thermometer,			*,		5,		2
+		DisinfectantSpray,		*,		8,		5
+		//Syringe,				*,		8, 		5
+		Heatpack,				*,		10,		5
+		StartKitIV,				*,		10,		6
+		SalineBag,				*,		15,		8
+		BloodBagEmpty,			*,		18,		10
+		FirstAidKit,			*,		20,		10
+		//Defibrillator,		*,		35, 	20
+		
+	<Category> Medications
+		CharcoalTablets,		*,		2,		1
+		DisinfectantAlcohol,	*,		4,		2
+		VitaminBottle,			*,		6,		4
+		TetracyclineAntibiotics,*,		8,		5
+		PainkillerTablets,		*,		10,		6
+		Epinephrine,			*,		20,		10
+		Morphine,				*,		25,		15	
+		
+	<Category> Money Exchange
+		MoneyRuble1,			1,		1,		-1
+		MoneyRuble5,			1,		5,		-1
+		MoneyRuble10,			1,		10,		-1
+		MoneyRuble25,			1,		25,		-1
+		MoneyRuble50,			1,		50,		-1
+		MoneyRuble100,			1,		100,	-1
+
+	<Category> Medical Supplies
+		Ibuprofen,						12,		2400,		1000
+		Propital,						*,		3200,		1500
+		AI2_Orange,						*,		5000,		2000
+		Grizzly_Medikit,				5,		20000,		8000
+		CmsKit,							5,		10000,		4000
+
+
+<Trader> Misc Trader
+	<Category> Tools (small)
+		Screwdriver,			*,		3,		1
+		Wrench,					*,		3,		1
+		SewingKit,				*,		4, 		1
+		Pliers,					*,		4, 		1
+		LeatherSewingKit,		*,		5, 		2
+		Whetstone,				*,		5,		2
+		Hammer,					*,		7,		3
+		Hacksaw,				*,		7,		3
+		HandSaw,				*,		7,		3
+		WeaponCleaningKit,		*,		8, 		3
+		KitchenKnife,			*,		8,		4
+		SteakKnife,				*,		9,		4
+		HuntingKnife,			*,		9,		4
+		CanOpener,				*,		10,		4
+		Compass,				*,		10,		4
+		OrienteeringCompass,	*,		10,		4
+		Hatchet,				*,		10,		4
+		CombatKnife,			*,		10,		5
+		Machete,				*,		12,		6	
+		ChernarusMap,			*,		15,		5
+		Lockpick,				*,		20,		10
+		Binoculars,				*,		30,		15		
+		FishingRod,				*,		60,		25
+		
+	<Category> Tools (big)
+		LugWrench,				*,		4,		1
+		Crowbar,				*,		5,		3
+		Shovel,					*,		6,		3
+		Pickaxe,				*,		10,		4
+		SledgeHammer,			*,		12,		6
+		PipeWrench,				W,		15,		7
+		WoodAxe,				*,		20,		8
+		FirefighterAxe,			*,		30,		12
+		
+	<Category> Electronics
+		Battery9V,				*,		8,		3
+		PersonalRadio,			*,		10,		5
+		Megaphone,				*,		30,		15
+		ElectronicRepairKit,	*,		35,		17
+		CableReel,				*,		40,		20
+		BatteryCharger,			*,		40,		20
+		BaseRadio,				*,		50,		30
+		Rangefinder,			*,		60,		35
+		NVGoggles,				*,		400,	220
+		ExpansionGPS			*,		1000,	100
+	
+	<Category> Fire & Lights
+		Chemlight_Blue,			*,		2,		1
+		Chemlight_Green,		*,		2,		1
+		Chemlight_Red,			*,		2,		1
+		Chemlight_White,		*,		2,		1
+		Chemlight_Yellow,		*,		2,		1
+		Roadflare,				*,		4,		2
+		Matchbox,				*,		6,		3
+		Flashlight,				*,		15,		5
+		PortableGasLamp,		*,		25,		10
+		PortableGasStove,		*,		30,		15
+		Headtorch_Black,		*,		40,		20
+		Headtorch_Grey,			*,		40,		20
+		Spotlight,				*,		600,	200
+	
+	<Category> Cooking & Hunting Supplies
+		PurificationTablets,	*,		5,		2
+		Pot,					M,		25,		10
+		Tripod,					*,		35,		15
+		BearTrap,				*,		50,		30
+	
+	<Category> Hardware Supplies
+		Paper,					*,		1,		0
+		Pen_Blue,				*,		2,		1
+		Rope,					*,		4,		1
+		TannedLeather,			*,		4,		1
+		AntiPestsSpray,			*,		8,		4
+		MetalWire,				*,		15,		6
+		EpoxyPutty,				*,		15,		6
+		DuctTape,				*,		20,		8
+		XmasLights,				*,		25,		10
+		HandcuffKeys,			*,		35,		12
+		Handcuffs,				*,		50,		15
+		Netting,				1,		50,		10
+		BurlapSack,				*,		50,		10
+		WoodenPlank,			10,		50,		15
+		MetalPlate,				*,		60,		18
+		SmallProtectorCase,		*,		70,		30
+		AmmoBox,				*,		80,		35
+		SmallGasCanister,		*,		80,		35
+		MediumGasCanister,		*,		100,	40
+		LargeGasCanister,		*,		200,	70
+		CanisterGasoline,		*,		300,	80
+		NailBox,				*,		300,	120
+		BarbedWire,				*,		450,	200
+		Camonet,				*,		600,	250
+		HescoBox,				*,		650,	250
+		CombinationLock,		*,		700,	300
+		CombinationLock4,		*,		900,	400
+		BarrelHoles_Blue,		*,		800,	300
+		BarrelHoles_Green,		*,		800,	300
+		BarrelHoles_Red,		*,		800,	300
+		BarrelHoles_Yellow,		*,		800,	300
+		Barrel_Blue,			M,		1500,	350
+		Barrel_Green,			M,		1500,	350
+		Barrel_Red,				M,		1500,	350
+		Barrel_Yellow,			M,		1500,	350
+		SeaChest,				*,		2000,	400
+		PowerGenerator,			*,		3000,	1000
+		MediumTent,				*,		3000,	500		
+		CarTent,				*,		5000,	700
+		LargeTent,				*,		7000,	1200
+		CodeLock,				*,		100,	70
+		RFSolarPanelKit,			*,		75000,		60000
+	
+	<Category> Seeds & Lime
+		TomatoSeedsPack,		*,		4, 		1
+		PepperSeedsPack,		*,		4, 		1
+		ZucchiniSeedsPack,		*,		6, 		2
+		PumpkinSeedsPack,		*,		10, 	3
+		GardenLime,				*,		20,		7
+		
+	<Category> Fluffy Pets <3
+		Bear_Beige,				*,		5,		1
+		Bear_Dark,				*,		5,		1
+		Bear_Pink,				*,		5,		1
+		Bear_White,				*,		5,		1
+
+	<Category> BBPItemPack
+		BBP_Wall_Kit, *, 200, 100
+		BBP_Door_Kit, *, 200, 100
+		BBP_Floor_Kit, *, 200, 100
+		BBP_Roof_Hatch_Kit, *, 200, 100
+		BBP_Floor_Hatch_Kit, *, 200, 100
+		BBP_Foundation_Kit, *, 200, 100
+		BBP_Gate_Kit, *, 200, 100
+		BBP_Half_Wall_Kit, *, 200, 100
+		BBP_Pillar_Kit, *, 200, 100
+		BBP_Ramp_Kit, *, 200, 100
+		BBP_Roof_Kit, *, 200, 100
+		BBP_Hanger_Roof_Kit, *, 200, 100
+		BBP_Slope_Roof_Kit, *, 200, 100
+		BBP_Slope_Wall_Kit, *, 200, 100
+		BBP_Stair_Kit, *, 200, 100
+		BBP_Triangle_Floor_Kit, *, 200, 100
+		BBP_Triangle_Roof_Kit, *, 200, 100
+		BBP_Window_Kit, *, 200, 100
+		// BBP_BuildPermit, *, 200, 1000
+		BBP_Blueprint, *, 200, 100
+		BBP_Workbench_Kit, *, 300, 150
+		BBP_Step_Ladder_Kit, *, 200, 100
+		BBP_TapeMeasure, *, 200, 100
+		BBP_Concrete_Brick_Pile, *, 800, 400
+		BBP_Cement, *, 2000, 1000
+		BBP_Mortar_Mix, *, 200, 100
+		BBP_Cement_Mixer_Kit, *, 10000, 5000 
+
+	<Category> BishopsImmersiveStorages
+		BIS_BookShelves_Kit, *, 2500, 1200
+		BIS_BookShelves2_Kit, *, 2500, 1200
+		BIS_Cabinet_Kit, *, 2500, 1200
+		BIS_Cabinet2_Kit, *, 2500, 1200
+		BIS_Counter_Kit, *, 2500, 1200
+		BIS_EndtableSmall_Kit, *, 2500, 1200
+		BIS_EndtableBig_Kit, *, 2500, 1200
+		BIS_Fridge_Kit, *, 2500, 1200
+		BIS_KitchenUnit_Kit, *, 2500, 1200
+		BIS_LobbyChair_Kit, *, 2500, 1200
+		BIS_MetalCrate_Kit, *, 2500, 1200
+		BIS_MetalCrate2_Kit, *, 2500, 1200
+		BIS_MetalShelves_Kit, *, 2500, 1200
+		BIS_Oven_Kit, *, 2500, 1200
+		BIS_OfficeDesk_Kit, *, 2500, 1200
+		BIS_Sink_Kit, *, 2500, 1200
+		BIS_WardrobeA_Kit, *, 2500, 1200
+		BIS_WardrobeB_Kit, *, 2500, 1200
+		BIS_WardrobeOld_Kit, *, 2500, 1200
+		BIS_WoodenBox_Kit, *, 2500, 1200
+		BIS_WoodStorage_Kit, *, 2500, 1200
+		BIS_SingleBed_Kit, *, 2500, 1200 
+
+	<Category> Furniture
+		M_Kit_Gun_Rack, *, 1000, 100
+		M_Kit_Gun_Wall, *, 1000, 100
+		M_Kit_Shelf, *, 1000, 100
+		M_Kit_WorkBenchTable, *, 1000, 100
+		M_Kit_Medical_Bag, *, 1000, 100
+		M_Kit_Fridge, *, 1000, 100
+		M_Kit_Gas_Stove, *, 1000, 100
+		M_Kit_Gun_Cabinet, *, 1000, 100
+		M_Kit_Gun_Rack_Tan, *, 1000, 100
+		M_Kit_Gun_Rack_Green, *, 1000, 100
+
+	<Category> Furniture Tools
+		M_WorkBench_ToolBox, *, 1000, 100
+		M_WorkBench_BluePrint, *, 1000, 100
+		M_Big_Gas_Canister, *, 1000, 100
+		M_WorkBench_Hammer, *, 1000, 100 
+
+		
+<Trader> Weapon Trader
+	<Category> Melee	
+		BrassKnuckles_Shiny,	W,		15,		6
+		StunBaton,				W,		15,		9
+		Pipe,					W,		25,		10
+		CattleProd,				W,		25,		15
+		BaseballBat,			W,		35,		17
+		NailedBaseballBat,		W,		45,		20
+		
+	<Category> Sidearms
+		Flaregun,               W,		80,		40
+		MakarovIJ70,			W,		100,	50
+		CZ75,					W,		135,	70
+		FNX45,					W,		175,	90
+		Glock19,				W,		300,	130
+		MKII,					W,		320,	160
+		Colt1911,				W,		340,	180
+		Engraved1911,			W,		340,	180
+		
+	<Category> Rifles
+		Izh18,					W,		350,	175
+		Mosin9130,				W,		400,	200
+		CZ527,					W,		500,	250
+		Winchester70,			W,		500,	250
+		SKS,					W,		600,	300
+		
+	<Category> Shotguns
+		Mp133Shotgun,			W,		500,	250
+		Izh43Shotgun,			W,		900,	400
+		Saiga,					W,		1500,	600
+		
+	<Category> Submachine Guns
+		CZ61,					W,		700,	300
+		UMP45,					W,		800,	350
+		MP5K,					W,		1000,	450	
+		AKS74U,					W,		1100,	600
+		
+	<Category> Assault Rifles
+		FAL,					W,		1000,	450
+		AKM,					W,		1500,	750
+		AK101,					W,		1500,	750
+		AK74,					W,		1600,	750
+		M4A1,					W,		1500,	750
+        AugShort				W,		1000,	700
+		
+	//<Category> Light Machine Guns
+		
+	<Category> Sniper Rifles
+		VSS,					W,		1600,	960
+		B95,					W,		1700,	1100
+		SVD,					W,		2000,	1200
+		
+	<Category> Grenades
+		RGD5Grenade,			1,		300,	100
+		M67Grenade,				1,		300,	100
+		M18SmokeGrenade_Red,	1,		300,	100
+		M18SmokeGrenade_Green,	1,		300,	100
+		M18SmokeGrenade_Yellow,	1,		300,	100
+		M18SmokeGrenade_Purple,	1,		300,	100
+		M18SmokeGrenade_White,	1,		300,	100
+		RDG2SmokeGrenade_Black,	1,		300,	100
+		RDG2SmokeGrenade_White,	1,		300,	100
+		FlashGrenade,			1,		300,	100
+
+	<Category> Pirulin Weapon Pack
+		PirulinAZ, W, 800, 200
+		PirulinDET, W, 800, 200
+		PirulinG21, W, 800, 200
+		PirulinM9SE, W, 800, 200
+		PirulinCX8, W, 7000, 250
+		PirulinKriss, W, 7000, 250
+		PirulinP90, W, 7000, 250
+		PirulinAA12, W, 7000, 250
+		PirulinM590, W, 7000, 250
+		PirulinXM1014, W, 7000, 250
+		PirulinACR, W, 7000, 1500
+		PirulinAK337, W, 7000, 1500
+		PirulinG36, W, 7000, 1500
+		PirulinG56, W, 7000, 1500
+		PirulinM4A4, W, 7000, 1500
+		PirulinSR25, W, 7000, 1500
+		mag_psr25_20rnd, M, 300, 150
+		PirulinT5000, W, 10000, 1000
+		PirulinSIG550, W, 10000, 1000
+
+	<Category> SNAFU Weapons
+		SNAFUAPS,                          W,		500,			200
+		SN_Springfield,                    W,		1000,			500
+		SN_Glock19,                        W,		1000,			500
+		SN_Mp443,                          W,		1000,			500
+		SN_M9,                             W,		1000,			500
+		GCGN_Vityaz,                       W,		5000,			2000
+		Tec9_Gun,                          W,		1500,			750
+		SNAFUVECTOR_9mm_GUN,               W,		4000,			1500
+		SNAFU_MP9_GUN,                     W,		3000,			1000
+		SNAFU_Fort12_GUN,                  W,		1000,			500
+		SNAFU_MPX_GUN,                     W,		3000,			1000
+		SNAFU_Agram_GUN,                   W,		3000,			1000
+		SNAFUKH9,                          W,		3000,			1000
+		SNAFUSten,                         W,		3000,			1000
+		SNAFU_PDW_9mm,	                   W,		3000,			1000
+		SNAFUUzi,                          W,		4000,			1500
+		SN_USP,                            W,		1000,			500
+		SNAFUVECTOR_45acp_GUN,             W,		4000,			1500
+		SNAFU_PDW_45ACP,	               W,		4000,			1500
+		SNAFUThompsonMk2,                  W,		4000,			1500
+		SNAFUSWM629,                       W,		3000,			1250
+		SNAFUChiappaRhino,                 W,		3000,			1250
+		SNAFUMagnum500,                    W,		5000,			1750
+		GCGN_MP7,                          W,		4500,			2000
+		SNAFUP90,                          W,		6000,			2000
+		SNAFU_Trenchgun,                   W,		2000,			750
+		SNAFU_TP82S,                       W,		2000,			750
+		SN_Auto_Shotgun,                   W,		12000,			4000
+		SN_M870,                           W,		3000,			1250
+		VR80_Gun,                          W,		6000,			2500
+		Spas12_Gun,                        W,		3000,			1000
+		AA12_Gun,                          W,		12000,			4000
+		SNAFUSR3_Vikhr,                    W,		16000,			4500
+		GCGN_M1Garand,                     W,		8000,			4000
+		SNAFU_M1918A2,                     W,		8000,			4000
+		SNAFUMarlin1895,                   W,		7000,			3500
+		SNAFU_AK12A,                       W,		8500,			3000
+		SNAFU_RPK16_Black,                 W,		9000,			3250
+		SNAFU_RPK16_Green,                 W,		9000,			3250
+		SNAFU_RPK16_Tan,                   W,		9000,			3250
+		SNAFU_AEK545_Gun,                  W,		9000,			3250
+		SNAFU_U100,                        W,		15000,			6500
+		GCGN_M4A1,                         W,		17000,			6000
+		SNAFU_CZ805_Gun,                   W,		15000,			4500
+		GCGN_HK416,                        W,		18000,			6500
+		ACR_Gun,                           W,		17000,			6000
+		M4_6933_Gun,                       W,		17000,			6000
+		IA2_Gun,                           W,		17000,			6000
+		SG550_Gun,                         W,		15000,			4500
+		MK18_Gun,                          W,		17000,			6000
+		SCAR_Gun,                          W,		17000,			6000
+		SNAFU_CALI_GUN,                    W,		6000,			4000
+		SNAFU_AK19,                        W,		15000,			4500
+		SNAFUTAR21_Black,                  W,		3000,			2000
+		SNAFUTAR21_Tan,                    W,		3000,			2000
+		SNAFUTAR21_Green,                  W,		3000,			2000
+		SNAFUFAMAS,                        W,		18000,			6000
+		SNAFUMk12,                         W,		17000,			6000
+		SNAFUSA80,                         W,		17000,			6000
+		HK416_Gun,                         W,		17000,			6000
+		SNAFUAUG,                          W,		17000,			6000
+		SNAFUAUG_BK,                       W,		17000,			6000
+		SNAFU_ADAR_Modular16_GUN,          W,		15000,			4500
+		SNAFU_AR15_Modular16_GUN,          W,		15000,			4500
+		SNAFU_LVOA556_GUN,                 W,		17000,			6000
+		SNAFU_M4556_Modular14_GUN,         W,		17000,			6000
+		SNAFU_M4556_Modular16_GUN,         W,		17000,			6000
+		SNAFU_Saint556_Gun,                W,		15000,			5000
+		GCGN_M249,                         W,		22500,			7500
+
+
+		
+	<Category> SNAFU Weapons 	
+		SNAFUPPSh,                         W,		4000,			1500
+		SNAFU_SKS,                         W,		8500,			3000
+		GCGN_VEPR,                         W,		6000,			2500
+		SNAFUPPSKN,                        W,		9000,			3250
+		SNAFU_AK103A,                      W,		9000,			3250
+		SNAFURPD,                          W,		16000,			5500
+		SNAFU_MK4710Gun,                   W,		16000,			5500
+		SNAFU_MK4716Gun,                   W,		16000,			5500
+		SNAFU_KAC_Gun,                     W,		18000,			6000
+		SNAFUHoneyBadger_Black,            W,		18000,			6000
+		SNAFUHoneyBadger_Tan,              W,		18000,			6000
+		SNAFU_AR15SPRBK,                   W,		18000,			6000
+		SNAFU_AR15SPRTAN,                  W,		18000,			6000
+		SNAFU_M4300AC_10_GUN,              W,		18000,			6000
+		SNAFU_M4300AC_14_GUN,              W,		18000,			6000
+		SNAFU_M4300AC_16_GUN,              W,		18000,			6000
+		SNAFU_M4300AC_14DV_GUN,            W,		18000,			6000
+		SNAFU_M14,                         W,		10000,			3500
+		SNAFU_M76,                         W,		10000,			3500
+		SNAFU_FRF2,                        W,		10000,			3500
+		SNAFU_M48,                         W,		8500,			2500
+		GCGN_M110_Black,                   W,		25000,			8000
+		GCGN_M110_Green,                   W,		25000,			8000
+		GCGN_M110_Tan,                     W,		25000,			8000
+		SNAFU_SR25_Gun,                    W,		25000,			8000
+		SNAFU_Saint_Gun,                   W,		25000,			8000
+		SNAFURSASS_Wood_GUN,               W,		25000,			8000
+		SNAFURSASS_od_GUN,                 W,		25000,			8000
+		SNAFURSASS_dkmc_GUN,               W,		25000,			8000
+		GCGN_M700,                         W,		20000,			6500
+		SNHK417_Gun,                       W,		25000,			8000
+		SNSA58_Gun,                        W,		30000,			10000
+		SNAFUM1A_Black,                    W,		25000,			8000
+		SNAFUM1A_Green,                    W,		25000,			8000
+		SNAFUM1A_Tan,                      W,		25000,			8000
+		SNAFU_AK308,                       W,		25000,			8000
+		SNAFU_Saint_Gun,                   W,		22000,			7250
+		Snafu_ScarH_Black_GUN,             W,		30000,			10000
+		Snafu_ScarH_DKMC_GUN,              W,		30000,			10000
+		Snafu_ScarH_OD_GUN,                W,		30000,			10000
+		Snafu_ScarH_Snow_GUN,              W,		30000,			10000
+		Snafu_ScarH_Tan_GUN,               W,		30000,			10000
+		Snafu_pkp_Black_GUN,               W,		75000,			25000
+		Snafu_pkp_NBlack_GUN,              W,		75000,			25000
+		SNAFUM24_GUN,                      W,		90000,			30000
+		SNAFU_AWM_Gun,                     W,		90000,			30000
+		SNAFUM98B_Atac_GUN,                W,		90000,			30000
+		SNAFUM98B_Digi_GUN,                W,		90000,			30000
+		SNAFUM98B_Ger_GUN,                 W,		90000,			30000
+		SNAFUM98B_Mc_GUN,                  W,		90000,			30000
+		SNAFUM98B_Snow_GUN,                W,		90000,			30000
+		SNAFUM98B_Wood_GUN,                W,		90000,			30000
+		SNAFUT5000_Dkmcc_GUN,              W,		90000,			30000
+		SNAFUT5000_Snow_GUN,               W,		90000,			30000
+		SNAFUT5000_Wood_GUN,               W,		90000,			30000
+		SNAFUSRSA2,                        W,		90000,			30000
+		SNAFUTac21,                        W,		90000,			30000
+		SNAFUDVL10M2,                      W,		90000,			30000
+		SNAFU_MAR10_Black_GUN,             W,		90000,			30000
+		SNAFUGevar_Grey,                   W,		95000,			30000
+		SNAFUGevar_Black,                  W,		95000,			30000
+		SNAFUGevar_Green,                  W,		95000,			30000
+		SNAFUGevar_Tan,                    W,		95000,			30000
+		SNAFUKivaari_Black_GUN,            W,		100000,			35000			
+		SNAFUKivaari_Tan_GUN,              W,		100000,			35000
+		SNAFUKivaari_Grey_GUN,             W,		100000,			35000
+		SNAFUKivaari_Snow_GUN,             W,		100000,			35000
+		SNAFU_M300BK,	                   W,		200000,			70000
+		SNAFU_M300TAN,	                   W,		200000,			70000
+		SNAFU_M300Green,                   W,		200000,			70000
+		GCGN_M200,                         W,		200000,			70000
+		SNAFU_M200Green,                   W,		200000,			70000
+		SNAFU_M200SNOW,	                   W,		200000,			70000
+		GCGN_M200_Tan,                     W,		200000,			70000
+		SNAFUM96,                          W,		190000,			60000
+		SNAFUGM6Lynx,                      W,		175000,			65000
+		GCGN_M82_Barret,                   W,		175000,			65000
+		SNAFUAX50_GUN,                     W,		200000,			75000
+		SNAFU_AS50_GUN,                    W,		210000,			75000
+		SNAFUASh12,                        W,		90000,			30000
+		SNAFUVSSK,		                   W,		220000,			75000
+		SNAFUAlligator,                    W,		225000,			80000
+	
+	<Category> SWP Guns
+        SWP_ACR,                        W,       10000,    800
+		SWP_LVOA,                       W,       10000,    800
+		SWP_M14_EBR,                    W,       10000,    800
+		SWP_Glock18,                    W,       10000,    800
+		SWP_M416,                       W,       10000,    800
+		SWP_M700,                       W,       10000,    1000
+		SWP_HK_MP7,                     W,       10000,    800
+		SWP_MPX,                        W,       10000,    800
+		SWP_Sig_P226,                   W,       10000,    800
+		SWP_PP19,                       W,       10000,    800
+		SWP_RO991,                      W,       10000,    1200
+		SWP_M417,                       W,       10000,    1200
+		SWP_SASS,,                      W,       10000,    1500
+		
+		
+<Trader> Weapon Supplies
+	<Category> Ammunition
+		Ammo_380,				1,		1,		-1
+		Ammo_9x19,				1,		1,		-1
+		Ammo_22,				1,		1,		-1
+		Ammo_45ACP,				1,		1,		-1
+		Ammo_12gaPellets,		1,		3,		1
+		Ammo_12gaSlug,			1,		4,		2
+		Ammo_9x39,				1,		4,		2
+		Ammo_9x39AP,			1,		5,		3
+		Ammo_308Win,			1,		5,		3
+		Ammo_545x39,			1,		5,		3
+		Ammo_556x45,			1,		5,		3
+		Ammo_762x39,			1,		5,		3
+		Ammo_762x54,			1,		10,		6		
+		Ammo_556x45Tracer,		1,		10,		5
+		Ammo_545x39Tracer,		1,		10,		5
+		Ammo_308WinTracer,		1,		10,		5
+		Ammo_762x39Tracer,		1,		10,		5
+		Ammo_Flare,				1,		15,		7
+	    Ammo_FlareBlue,			1,		15,		7
+	    Ammo_FlareGreen,		1,		15,		7
+	    Ammo_FlareRed,			1,		15,		7
+		Ammo_762x54Tracer,		1,		20,		12		
+		// When changing Prices here keep in Mind that Players
+		// can just unpack the Ammoboxes and sell the Ammo seperatly!
+		// Originally the Ammoboxes buying Price is 20% less than
+		// buying single Ammo. The Selling Price is the same as
+		// selling the Ammo seperately.
+		AmmoBox_380_35rnd,		*,		28,		-1
+		AmmoBox_9x19_25rnd,		*,		20,		-1
+		AmmoBox_45ACP_25rnd,	*,		20,		-1
+		AmmoBox_22_50Rnd,		*,		60,		20
+		AmmoBox_00buck_10rnd,	*,		24,		10
+		AmmoBox_12gaSlug_10Rnd,	*,		32,		20
+		AmmoBox_9x39_20Rnd,		*,		32,		20
+		AmmoBox_9x39AP_20Rnd,	*,		80,		60
+		AmmoBox_308Win_20Rnd,	*,		80,		60
+		AmmoBox_545x39_20Rnd,	*,		80,		60
+		AmmoBox_556x45_20Rnd,	*,		80,		60
+		AmmoBox_762x39_20Rnd,	*,		80,		60
+		AmmoBox_762x54_20Rnd,	*,		200,	120		
+		AmmoBox_308WinTracer_20Rnd,		*,		160,	80
+		AmmoBox_545x39Tracer_20Rnd,		*,		160, 	80
+		AmmoBox_556x45Tracer_20Rnd,		*,		160,	80
+		AmmoBox_762x39Tracer_20Rnd,		*,		160,	80
+		AmmoBox_762x54Tracer_20Rnd,		*,		400,	200
+		
+	<Category> Magazines
+		Mag_IJ70_8Rnd,			M,		30,		15
+		Mag_CZ75_15Rnd,			M,		40,		20
+		Mag_Glock_15Rnd,		M,		40,		20
+		Mag_MKII_10Rnd,			M,		40,		20
+		Mag_1911_7Rnd,			M,		40,		20
+		Mag_FNX45_15Rnd,		M,		40,		20
+		Mag_CZ527_5rnd,			M,		60,		30
+		Mag_CZ61_20Rnd,			M,		100,	50
+		Mag_UMP_25Rnd,			M,		150,	75
+		Mag_MP5_30Rnd,			M,		200,	100
+		Mag_FAL_20Rnd,			M,		100,	50
+		Mag_Saiga_5Rnd,			M,		100,	50
+		Mag_Saiga_8Rnd,			M,		220,	60
+		Mag_Saiga_Drum20Rnd,	M,		480,	110
+		Mag_AKM_30Rnd,			M,		220,	110
+		Mag_AKM_Palm30Rnd,		M,		220,	110
+		Mag_AKM_Drum75Rnd,		M,		480,	220
+		Mag_AK101_30Rnd,		M,		220,	110
+		Mag_AK74_30Rnd,			M,		220,	110
+		Mag_STANAG_30Rnd,		M,		220,	110
+		Mag_STANAGCoupled_30Rnd,M,		480,	220
+		Mag_CMAG_10Rnd,			M,		120,	60
+		Mag_CMAG_20Rnd,			M,		180,	80
+		Mag_CMAG_30Rnd,			M,		220,	110
+		Mag_CMAG_40Rnd,			M,		300,	150
+		Mag_VSS_10Rnd,			M,		220,	110
+		Mag_SVD_10Rnd,			M,		250,	125
+		Mag_308WinSnaploader_2Rnd,		M,		250,	125
+		
+	<Category> Handguards
+		MP5_PlasticHndgrd,		*,		100,	50
+		MP5_RailHndgrd,			*,		150,	75
+		AK74_Hndgrd,			*,		150,	75
+		AK_WoodHndgrd,			*,		200,	100
+		AK_RailHndgrd,			*,		200,	100
+		AK_PlasticHndgrd,		*,		200,	100
+		M4_PlasticHndgrd,		*,		150,	75
+		M4_RISHndgrd,			*,		200,	100
+		M4_MPHndgrd,			*,		200,	100
+
+	<Category> Buttstocks
+		MP5k_StockBttstck,		*,		100,	50
+		Fal_OeBttstck,			*,		100,	50
+		Fal_FoldingBttstck,		*,		150,	75
+		Saiga_Bttstck,			*,		150,	75
+		AKS74U_Bttstck,			*,		150,	75
+		AK74_WoodBttstck,		*,		150,	75
+		AK_PlasticBttstck,		*,		100,	50
+		AK_WoodBttstck,			*,		150,	75
+		AK_FoldingBttstck,		*,		250,	125
+		M4_OEBttstck,			*,		150,	75
+		M4_CQBBttstck,			*,		150,	75
+		M4_MPBttstck,			*,		150,	75
+	
+	<Category> Optics
+		M4_CarryHandleOptic,	*,		150,	60
+		BUISOptic,				*,		150,	60
+		FNP45_MRDSOptic,		*,		250,	100
+		ACOGOptic,				*,		300,	120
+		M68Optic,				*,		500,	200
+		M4_T3NRDSOptic,			*,		500,	200
+		KobraOptic,				*,		600,	250
+		KashtanOptic,			*,		700,	300
+		PUScopeOptic,			*,		900,	500
+		HuntingOptic,			*,		1000,	550
+		PSO1Optic,				*,		1100,	600	
+		PSO11Optic,				*,		1400,	840
+		KazuarOptic,			*,		2200,	1400
+	
+	<Category> Supressors
+		PistolSuppressor,		*,		150,	75
+		AK_Suppressor,			*,		250,	125
+		M4_Suppressor,			*,		250,	125
+		
+	<Category> Compensators
+		Mosin_Compensator,		*,		150,	75
+		MP5_Compensator,		*,		200,	100
+
+	<Category> Bayonets
+		Mosin_Bayonet,			*,		100,	60
+		M9A1_Bayonet,			*,		150,	75
+		AK_Bayonet,				*,		150,	75
+		SKS_Bayonet,			*,		100,	60
+		
+	<Category> Flashlights
+		Universallight,			*,		120,	60
+
+
+	<Category> Pirulin Weapon Pack:Mags
+		mag_paz_16rnd, M, 300, 150
+		mag_pdet_7rnd, M, 300, 150
+		mag_pg21_16rnd, M, 300, 150
+		mag_pm9se_20rnd, M, 300, 150
+		mag_pp90_50rnd, M, 300, 150
+		mag_paa12_20rnd, M, 300, 150		
+		mag_pacr_30rnd, M, 300, 150
+		mag_pt5000_7rnd, M, 300, 100
+		mag_pm4a4_75rnd, M, 800, 150
+		mag_pg56_30rnd, M, 300, 150
+		mag_pcx8_30rnd, M, 300, 150
+		mag_pkriss_30rnd, M, 300, 150
+		mag_pak337_30rnd, M, 300, 150
+		mag_pg36_100rnd, M, 900, 150
+		mag_psig550_30rnd, M, 300, 100
+
+	<Category> Pirulin Weapon Pack:Buttstocks
+		PirulinG21_Buttstock, *, 150, 75
+		PirulinKriss_Buttstock, *, 250, 125
+		PirulinAK337_Buttstock, *, 250, 125
+		PirulinG36_Buttstock, *, 250, 125
+		PirulinG56_Buttstock, *, 250, 125
+		PirulinM4A4_Buttstock, *, 250, 125
+
+	<Category> Pirulin Weapon Pack:Suppressors
+		PirulinPistol_Suppressor, *, 150, 75
+		PirulinPistol_Suppressor2, *, 150, 75
+		Pirulin_Suppressor1, *, 800, 200
+		Pirulin_Suppressor2, *, 800, 200
+		Pirulin_Suppressor3, *, 800, 200
+
+	<Category> Pirulin Weapon Pack:Optics
+		PirulinEotech, *, 2200, 600
+		PirulinHamr, *, 2200, 600
+		PirulinOKP, *, 2200, 600
+		PirulinSpectre, *, 2200, 600
+		PirulinScope, *, 2200, 600
+
+	<Category> SNAFU Magazines
+		SNAFUAPS_20rdMag,                   *,		200,			50
+		SN_Springfield_Mag,                 *,		275,			75
+		SN_Mp443_Mag,                       *,		275,			75
+		SN_M9_Mag,                          *,		275,			75
+		GCGN_Vityaz_30Rnd,                  *,		300,			100
+		Tec9_Mag,                           *,		300,			100
+		SNAFUVECTOR_9mm_Mag,                *,		400,			150
+		SNAFU_MP9_30rnd_Mag,                *,		300,			100
+		SNAFU_Fort12_12rnd_Mag,             *,		275,			75
+		SNAFU_MPX_30rnd_Mag,                *,		300,			100
+		SNAFU_Agram_32rnd_Mag,              *,		400,			150
+		SNAFUKH9_30rdMag,                   *,		300,			100
+		SNAFUSten_32rdMag,                  *,		400,			150
+		SNAFU_PDW_9mm_Mag,                  *,		400,			150
+		SNAFU_PDW_45ACP_Mag,                *,		400,			150
+		SNAFUUzi_32rdMag,                   *,		400,			150
+		SNAFUUzi_72rdMag,                   *,		1000,			300
+		SN_USP_Mag,                         *,		275,			75
+		SNAFUVECTOR_45acp_Mag,              *,		400,			150
+		SNAFUThompsonMk2_30rdMag,           *,		300,			100
+		GCGN_MP7_40Rnd,                     *,		800,			250
+		SNAFUP90_50rdMag,                   *,		1000,			300
+		SN_Auto_Shotgun_Mag,                *,		2500,			800
+		VR80_Magazine_5rd,                  *,		1000,			300
+		VR80_Magazine_10rd,                 *,		1500,			500
+		AA12_Mag,                           *,		4000,			1300
+		SNAFU_SR3Vikhr_Mag,                 *,		2000,			750
+		SNAFU_M1918A2_Mag,                  *,		1000,			500
+		SNAFU_AK12_Mag,                     *,		2000,			600
+		SNAFU_RPK16_Black_Mag,              *,		6000,			2000
+		SNAFU_RPK16_Green_Mag,              *,		6000,			2000
+		SNAFU_RPK16_Tan_Mag,                *,		6000,			2000
+		SNAFU_U100_Mag,                     *,		9000,			3000
+		SNAFU_PMAG556_Black,                *,		2000,			600
+		SNAFU_PMAG556_Grey,                 *,		2000,			600
+		SNAFU_PMAG556_OD,                   *,		2000,			600
+		SNAFU_PMAG556_Tan,                  *,		2000,			600
+		SNAFU_BMAG556_Black,                *,		10000,			3000
+		SNAFU_BMAG556_Tan,                  *,		10000,			3000
+		SNAFU_CMAG30556_Black,              *,		2000,			600
+		SNAFU_CMAG30556_Tan,                *,		2000,			600
+		SNAFU_CMAG40556_Black,              *,		2500,			750
+		SNAFU_CMAG40556_Tan,                *,		2500,			750
+		SNAFU_CMAG60556_Black,              *,		4000,			1250
+		SNAFU_CMAG60556_Tan,                *,		4000,			1250
+		GCGN_HK416_Mag,                     *,		4000,			1250
+		SNAFU_CMAG30300_Black,              *,		2000,			600
+		SNAFU_CMAG30300_Tan,                *,		2000,			600
+		SNAFU_CMAG40300_Black,              *,		2500,			750
+		SNAFU_CMAG40300_Tan,                *,		2500,			750
+		SNAFU_CMAG60300_Black,              *,		4000,			1250
+		SNAFU_CMAG60300_Tan,                *,		4000,			1250
+		SNAFU_BMAG300_Tan,                  *,		10000,			3000
+		SNAFU_BMAG300_Black,                *,		10000,			3000
+		SG550_Mag,                          *,		2000,			625
+		SNAFUAUG_30rdMag,                   *,		2000,			625
+		SNAFUMk12_20rdMag,                  *,		1500,			500
+		GCGN_M249_Mag,                      *,		12000,			3500
+		SNAFU_KAC_Mag,                      *,		2000,			625
+		SNAFUHoneyBadger_30rdMag_Black,     *,		2000,			625
+		SNAFUHoneyBadger_30rdMag_Tan,       *,		2000,			625
+		SNAFUAR15_SPR_30RND_Mag,            *,		2000,			625
+		SNAFUAR15_SPR_40RND_Mag,            *,		2500,			750
+		SNAFUAR15_SPR_60RND_Mag,            *,		4000,			1250
+		SNAFUAR15_SPR_100RND_Mag,           *,		10000,			3000
+		SNAFUPPSh_71rdMag,                  *,		4000,			1300
+		SNAFU_SKS_10Rnd_Mag,                *,		1000,			325
+		SNAFU_SKS_30Rnd_Mag,                *,		3000,			1000
+		GCGN_VEPR_10rnd,                    *,		1000,			325
+		SNAFUPPSKN_30rdMag,                 *,		3000,			1000
+		SNAFU_AK103_Mag,                    *,		3000,			1000
+		SNAFURPD_100rdMag,                  *,		12000,			3250
+		SNAFU_M14_Mag,                      *,		4000,			1250
+		SNAFU_M76_Mag,                      *,		2000,			700
+		SNAFU_FRF2_Mag,                     *,		2000,			700
+		GCGN_M110_Mag,						*,		4000,			1250
+		SNAFU_SR25_Mag,                     *,		4000,			1250
+		SNAFU_Saint_Mag,                    *,		4000,			1250
+		SNAFURSASS_Mag,                     *,		4000,			1250
+		GCGN_M700_Mag,                      *,		2000,			700
+		SNHK417_Mag,                        *,		4000,			1250
+		Modified_SA58_30RND_BK,             *,		6000,			2000
+		Modified_SA58_30RND_WBK,            *,		6000,			2000
+		Modified_SA58_30RND_DT,             *,		6000,			2000
+		SA58_DrumMag,                       *,		10000,			3250
+		SA58_30RND_BK,                      *,		6000,			2000
+		SA58_30RND_WBK,                     *,		6000,			2000
+		SA58_30RND_DT,                      *,		6000,			2000
+		GCGN_Mag_FAL_50Rnd,                 *,		10000,			3250
+		SNAFUM1A_20rdMag,                   *,		4000,			1250
+		SNAFU_AK308_Mag,                    *,		4000,			1250
+		Snafu_ScarH_25RND_Mag_BK,           *,		4250,			1400
+		Snafu_ScarH_25RND_Mag_DKMC,         *,		4250,			1400
+		Snafu_ScarH_25RND_Mag_OD,           *,		4250,			1400
+		Snafu_ScarH_25RND_Mag_Snow,         *,		4250,			1400
+		Snafu_ScarH_25RND_Mag_Tan,          *,		4250,			1400
+		SNAFU_ScarH_100RND_Mag_Black,       *,		20000,			6500
+		SNAFU_ScarH_100RND_Mag_Tan,         *,		20000,			6500
+		Snafu_pkp_250RND_Mag,               *,		35000,			12000
+		SNAFUM24_Mag,                       *,		8000,			2250
+		SNAFU_AWM_Mag,                      *,		8000,			2250
+		SNAFUM98B_Mag,                      *,		15000,			5000
+		SNAFUT5000_Mag,                     *,		8000,			2250
+		SNAFUSRSA2_10rdMag,                 *,		15000,			5000
+		SNAFUTac21_5rdMag,                  *,		8000,			2250
+		SNAFUDVL10M2_5rdMag,                *,		8000,			2250
+		SNAFU_Mar10_15rnd_Mag,              *,		20000,			6500
+		SNAFUGevar_10rdMag,                 *,		15000,			5000
+		SNAFUKivaari_10rdMag,               *,		15000,			5000
+		SNAFUKivaari_25rdMag,               *,		24000,			8000
+		SNAFU_M300Mag,	                    *,		35000,			12000
+		GCGN_M200_Mag,                      *,		35000,			12000
+		SNAFUM96_5rdMag,                    *,		35000,			12000
+		SNAFUGM6Lynx_5rdMag,                *,		35000,			12000
+		GCGN_M82_Mag,                       *,		40000,			13250
+		SNAFUAX50_Mag,                      *,		35000,			12000
+		SNAFU_AS50_Mag,                     *,		40000,			13250
+		SNAFUASh12_20rdMag,                 *,		45000,			15000
+		SNAFUAlligator_5rdMag,              *,		45000,			15000		
+
+		
+	<Category> SNAFU Scopes
+		GCGN_M84_Optic,						*,		1500,			600
+		SNAFU_HuntingOptic,                 *,		1500,			600
+		SNAFU_AKHuntingOptic,               *,		1500,			600
+		SNAFU_HHuntingOptic,                *,		1500,			600
+		SNAFU_MHuntingOptic,                *,		1500,			600
+		SNAFU_M14Optic,                     *,		1500,			600
+		SNAFU_Nightforce,                   *,		1500,			600
+		SNAFU_AKNightforce,                 *,		1500,			600
+		SNAFU_HNightforce,                  *,		1500,			600
+		SNAFU_MNightforce,                  *,		1500,			600
+		SNAFU_Leupold_Mark8,                *,		1500,			600
+		SNAFU_AKLeupold_Mark8,              *,		1500,			600
+		SNAFU_HLeupold_Mark8,               *,		1500,			600
+		SNAFU_MLeupold_Mark8,               *,		1500,			600
+		SNAFU_Kahles,                       *,		1500,			600
+		SNAFU_AKKahles,                     *,		1500,			600
+		SNAFU_HKahles,                      *,		1500,			600
+		SNAFU_MKahles,                      *,		1500,			600
+		SNAFU_Aimpoint_ACO,                 *,		1500,			600
+		SNAFU_AKAimpoint_ACO,               *,		1500,			600
+		SNAFU_HAimpoint_ACO,                *,		1500,			600
+		SNAFU_MAimpoint_ACO,                *,		1500,			600
+		SNAFU_Aimpoint_M5,                  *,		1500,			600
+		SNAFU_AKAimpoint_M5,                *,		1500,			600
+		SNAFU_HAimpoint_M5,                 *,		1500,			600
+		SNAFU_MAimpoint_M5,                 *,		1500,			600
+		SNAFU_Elcan,                        *,		1500,			600
+		SNAFU_AKElcan,                      *,		1500,			600
+		SNAFU_HElcan,                       *,		1500,			600
+		SNAFU_MElcan,                       *,		1500,			600
+		SNAFU_EOTech_EXPS3,                 *,		1500,			600
+		SNAFU_AKEOTech_EXPS3,               *,		1500,			600
+		SNAFU_HEOTech_EXPS3,                *,		1500,			600
+		SNAFU_MEOTech_EXPS3,                *,		1500,			600
+		SNAFU_Trijicon,                     *,		1500,			600
+		SNAFU_AKTrijicon,                   *,		1500,			600
+		SNAFU_Trijicon_Docter,              *,		1500,			600
+		SNAFU_AKTrijicon_Docter,            *,		1500,			600
+		SNAFU_HTrijicon,                    *,		1500,			600
+		SNAFU_HTrijicon_Docter,             *,		1500,			600
+		SNAFU_MTrijicon,                    *,		1500,			600
+		SNAFU_MTrijicon_Docter,             *,		1500,			600
+		SNAFU_Walther,                      *,		1500,			600
+		SNAFU_AKWalther,                    *,		1500,			600
+		SNAFU_HWalther,                     *,		1500,			600
+		SNAFU_MWalther,                     *,		1500,			600
+		SNAFU_Docter,                       *,		1500,			600
+		SNAFU_Tango6T_Black,                *,		1500,			600
+		SNAFU_Tango6T_Tan,                  *,		1500,			600
+		SNAFU_Tango6T_Wood,                 *,		1500,			600
+		SNAFU_Tango6T_Snow,                 *,		1500,			600
+		SNAFU_AKTango6T_Black,              *,		1500,			600
+		SNAFU_AKTango6T_Tan,                *,		1500,			600
+		SNAFU_AKTango6T_Wood,               *,		1500,			600
+		SNAFU_AKTango6T_Snow,               *,		1500,			600
+		SNAFU_MTango6T_Black,               *,		1500,			600
+		SNAFU_MTango6T_Tan,                 *,		1500,			600
+		SNAFU_MTango6T_Wood,                *,		1500,			600
+		SNAFU_MTango6T_Snow,                *,		1500,			600
+		SNAFU_Kobra,                        *,		1500,			600
+		SNAFU_IRONMODOptic,                 *,		1500,			600
+		
+	<Category> SNAFU HandGuards
+		SNAFU_GADAR,						*,		500,			100
+		SNAFU_HG625,                        *,		500,			100
+		SNAFU_HGGS,                         *,		500,			100
+		SNAFU_MCMR07,                       *,		500,			100
+		SNAFU_MCMR08,                       *,		500,			100
+		SNAFU_MCMR09,                       *,		500,			100
+		SNAFU_MCMR10,                       *,		500,			100
+		SNAFU_MCMR13,                       *,		500,			100
+		SNAFU_MCMR15,                       *,		500,			100
+		SNAFU_HGMlok,                       *,		500,			100
+		SNAFU_HGMlok_Tan,                   *,		500,			100
+		SNAFU_MK7,                          *,		500,			100
+		SNAFU_MK9,                          *,		500,			100
+		SNAFU_MK10,                         *,		500,			100
+		SNAFU_MK13,                         *,		500,			100
+		SNAFU_MK15,                         *,		500,			100
+		SNAFU_LVOAHG,                       *,		500,			100
+		SNAFU_MK47HG,                       *,		500,			100
+		SNAFU_SR3HG,                        *,		500,			100
+		SNAFU_AK_HG,                        *,		500,			100
+		SNAFU_M249HG,                       *,		500,			100
+		
+		
+	<Category> SNAFU Stocks
+		SA58_Stock,							*,		250,			100
+		SNAFU_AK_AR_Stock,                  *,		250,			100
+		SNAFU_M4SS_Stock,                   *,		250,			100
+		SNAFU_MOE_Stock,                    *,		250,			100
+		SNAFU_PRSGen3_Stock,                *,		250,			100
+		SNAFU_SCQR_Stock,                   *,		250,			100
+		SNAFU_SADAR_Stock,                  *,		250,			100
+		SNAFU_SBA_Stock,                    *,		250,			100
+		SNAFU_UBR_Stock,                    *,		250,			100
+		SNAFU_AK19_Stock,                   *,		250,			100
+		SNAFU_MK47_Stock,                   *,		250,			100
+		SNAFU_M249Stock,                    *,		250,			100
+		SNAFU_M200S_BK,                     *,		250,			100
+		SNAFU_M200S_Tan,                    *,		250,			100
+		SNAFU_M200S_Green,                  *,		250,			100
+		SNAFU_M200S_Snow,                   *,		250,			100
+		SNAFU_M200B_BK,                     *,		250,			100
+		SNAFU_WSR3Stock,                    *,		250,			100
+		SNAFUDSASA58_Stock,                 *,		250,			100
+		
+				
+	<Category> SNAFU Suppressors
+		GCGN_M1Garand_Supp,								*,		20000,			500
+		SR3_Vikhr_Supp,                                 *,		20000,			500
+		SNAFU_SR25_Supp,                                *,		20000,			500
+		SNAFU_Normalized_Suppressor_Green,              *,		20000,			500
+		SNAFU_Normalized_Suppressor_Black,              *,		20000,			500
+		SNAFU_Standardized_Suppressor_Black,            *,		20000,			500
+		SNAFU_Standardized_Suppressor_Green,            *,		20000,			500
+		SNAFU_LNormalized_Suppressor_Black,             *,		20000,			500
+		SNAFU_LNormalized_Suppressor_Green,             *,		20000,			500
+		SNAFU_LStandardized_Suppressor_Black,           *,		20000,			500
+		SNAFU_LStandardized_Suppressor_Green,           *,		20000,			500
+		SNAFUAR15_SPR_SIL,                              *,		20000,			500
+		SNAFUAR15_SPR_SQSIL,                            *,		20000,			500
+		SNAFUKivaari_338_Supp,                          *,		30000,			500
+		SNAFU_408_Suppressor_T,                         *,		40000,			500
+		Snafu_ScarH_SIL_Tan,                            *,		20000,			500
+		Snafu_ScarH_SIL_Black,                          *,		20000,			500
+		SNAFUGevar_Suppressor_Tan,                      *,		30000,			500
+		SNAFUGevar_Suppressor_Green,                    *,		30000,			500
+		SNAFU_Agram_Suppressor_Black,                   *,		10000,			500
+		SNAFU_MPX_Suppressor_Black,                     *,		10000,			500
+		SNAFU_SPMOD,                                    *,		20000,			500
+		SNAFU_HeramuzzelF,                              *,		2000,			500
+		SNAFU_MuzzelFF,                                 *,		2000,			500
+		SNAFU_SR3Vikhr_Supp,                            *,		2000,			500
+		SNAFU_AK308Muzzel,                              *,		2000,			500
+		SNAFU_AK19Muzzel,                               *,		2000,			500
+		SNAFU_MK47Muzzel,                               *,		2000,			500
+		
+		
+
+		
+	<Category> SNAFU Bipods
+		SNAFU_Bipod,						*,		750,			250
+		SNAFU_PKPBIPOD,                     *,		2000,			250
+		SNAFU_NPKPBIPOD,                    *,		750,			250
+		SNAFU_AtlasBipod,                   *,		750,			250
+		SNAFU_ModBipod,                     *,		750,			250
+		SNAFU_VSSKbipod,                    *,		2500,			250
+		SNAFU_M249Bipod,                    *,		1000,			250
+		SNAFU_M200B_BK,                     *,		2500,			250
+		
+		
+		
+	<Category> SNAFU Attachments
+		SNAFU_SKS_Bayonet,						*,		500,			250
+		GCGN_M1Garand_FlashHider,               *,		500,			250
+		GCGN_M1Garand_Bayonet,                  *,		500,			250
+		SNAFU_AK_Mount_Base,                    *,		500,			250
+		SNAFU_Hunting_Mount_Base,               *,		500,			250
+		SNAFU_Mosin_Mount_Base,                 *,		500,			250
+		SNAFU_TACGripColtA2_Tan,                *,		500,			250
+		SNAFU_TACGripColtA2_OD,                 *,		500,			250
+		SNAFU_TACGripColtA2_Grey,               *,		500,			250
+		SNAFU_TACGripColtA2_BK,                 *,		500,			250
+		SNAFU_GIGripColtA2,                     *,		500,			250
+		SNAFUUniversalLight,                    *,		500,			250
+		SNAFU_PistolGripColtA2,                 *,		500,			250
+		SNAFU_PEQ1_Laser,                       *,		500,			250
+
+
+	<Category> SNAFU Ammo
+		GCGN_Ammo_3006,							*,		2000,			2000
+		GCGN_Ammo_408Chey,						*,		2000,			2000
+		SNAFU_Ammo_338,							*,		10000,			10000
+		GCGN_Ammo_762x51,                       *,		1050,			1050
+		SNAFU_Ammo_300ACC,                      *,		700,			700
+		SNAFU_Ammo_46x30,                       *,		600,			600
+		SNAFU_Ammo_5_7x28mm,                    *,		600,			600
+		SNAFU_Ammo_127x55mm,                    *,		10000,			10000
+		SNAFU_Ammo_45_70mm,                     *,		550,			550
+		SNAFU_Ammo_500_SW,                      *,		800,			800
+		SNAFU_Ammo_145Cal,                      *,		500,			500
+		SNAFU_MD_Ammo_556x45mm_M855A1,          *,		800,			800
+		SNAFU_Ammo_762x25,                      *,		600,			600
+		SNAFU_Ammo_44,                          *,		600,			600
+		GCGN_Ammo_50Cal,                        *,		600,			600
+		SNAFU_Ammo_127x55mmAP,                  *,		600,			600
+		
+		
+	<Category> SNAFU Grips
+		SA58_FGrip,							*,		300,			200
+		SNAFUAR15_AFG,                      *,		300,			200
+		SNAFUScar_AFG_Tan,                  *,		300,			200
+		SNAFUScar_AFG_BK,                   *,		300,			200
+		SNAFUMPX_Grip,                      *,		300,			200
+		SNAFU_AFG_02_Black,                 *,		300,			200
+		SNAFU_AFG_02_Tan,                   *,		300,			200
+		SNAFU_AFG_02_OD,                    *,		300,			200
+		SNAFU_FGKAC_Grip,                   *,		300,			200
+		SNAFU_FGCR_Grip,                    *,		300,			200
+		SNAFU_SR3Grip,                      *,		300,			200
+		SNAFU_M249Grip,                     *,		300,			200
+
+	<Category> SWP Guns:Mags
+	    Mag_STANAG_30Rnd,               *,        1000,    100
+        Mag_STANAG_30Rnd,               *,        1000,    100
+        SWP_EBR_MAG,                    *,        1000,    100
+        Mag_Glock_15Rnd,                *,         750,    50
+        Mag_STANAG_30Rnd,               *,        1000,    100
+        SWP_M700_Mag,                   *,        1000,    100
+        SWP_MP7_Mag,                    *,        1000,    100
+        SWP_MPX_Mag,                    *,        1000,    100
+        SWP_P226_Mag,                   *,        1000,    100
+        SWP_PP19_Mag,                   *,        1000,    100
+        SWP_RO991Mag,                   *,        1000,    100
+        SWP_762P_Mag,                   *,        1000,    100
+        SWP_762P_Mag,                   *,        1000,    100
+
+
+	
+	
+<Trader> Clothing Trader
+	<Category> Glasses
+		SportGlasses_Orange,	*,		17,		8
+		SportGlasses_Blue,		*,		18,		9
+		SportGlasses_Black,		*,		20,		10
+		SportGlasses_Green,		*,		20,		10
+		ThinFramesGlasses,		*,		20,		10
+		ThickFramesGlasses,		*,		23,		11
+		DesignerGlasses,		*,		30,		15
+		AviatorGlasses,			*,		40,		20
+		TacticalGoggles,		*,		60,		30
+		NVGHeadstrap,			*,		200,	120
+		
+	<Category> Armbands
+		Armband_Pink,			*,		15,		5
+		Armband_Yellow,			*,		15,		5
+		Armband_Orange,			*,		15,		5
+		Armband_Red,			*,		15,		5
+		Armband_Blue,			*,		15,		5
+		Armband_White,			*,		15,		5
+		Armband_Black,			*,		15,		5
+		Armband_Green,			*,		15,		5
+		
+	<Category> Gloves
+		SurgicalGloves_LightBlue,*,		5,		1
+		SurgicalGloves_Blue,	*,		5,		1
+		SurgicalGloves_White,	*,		5,		1
+		SurgicalGloves_Green,	*,		5,		1
+		WorkingGloves_Yellow,	*,		25,		6
+		WorkingGloves_Beige,	*,		30,		8
+		WorkingGloves_Brown,	*,		30,		8
+		WorkingGloves_Black,	*,		30,		8
+		TacticalGloves_Beige,	*,		35,		10
+		TacticalGloves_Black,	*,		35,		10
+		TacticalGloves_Green,	*,		35,		10
+		OMNOGloves_Gray,		*,		40,		12
+		OMNOGloves_Brown,		*,		40,		12
+		NBCGlovesGray,			*,		65,		20
+
+	<Category> Hats & Caps
+		MedicalScrubsHat_Blue,	*,		2,		1
+		MedicalScrubsHat_White,	*,		2,		1
+		MedicalScrubsHat_Green,	*,		2,		1
+		Bandana_Polkapattern,	*,		6,		2
+		Bandana_Redpattern,		*,		6,		2
+		Bandana_Blackpattern,	*,		6,		2
+		Bandana_Greenpattern,	*,		8,		2
+		Bandana_Camopattern,	*,		10,		3
+		BaseballCap_CMMG_Pink,	*,		12,		3
+		BaseballCap_Pink,		*,		12,		3
+		BaseballCap_Red,		*,		12,		3
+		BaseballCap_Blue,		*,		12,		3
+		BaseballCap_Beige,		*,		12,		3
+		BaseballCap_CMMG_Black,	*,		12,		3
+		BaseballCap_Black,		*,		13,		3
+		BaseballCap_Olive,		*,		14,		4
+		BaseballCap_Camo,		*,		16,		5
+		PrisonerCap,			*,		16,		5
+		BoonieHat_Orange,		*,		16,		5
+		BoonieHat_Red,			*,		16,		5
+		BoonieHat_Blue,			*,		16,		5
+		BoonieHat_NavyBlue,		*,		16,		5
+		BoonieHat_Black,		*,		17,		5
+		BoonieHat_Tan,			*,		18,		6
+		BoonieHat_Olive,		*,		18,		6
+		BoonieHat_DPM,			*,		20,		7
+		BoonieHat_Dubok,		*,		20,		7
+		BoonieHat_Flecktran,	*,		20,		7
+		CowboyHat_Brown,		*,		20,		7
+		CowboyHat_darkBrown,	*,		20,		7
+		CowboyHat_black,		*,		20,		7
+		CowboyHat_green,		*,		20,		7
+		PilotkaCap,				*,		25,		7
+		OfficerHat,				*,		25,		7
+		PoliceCap,				*,		25,		7
+		MilitaryBeret_ChDKZ,	*,		26,		7
+		MilitaryBeret_Red,		*,		26,		7
+		MilitaryBeret_UN,		*,		26,		7
+		MilitaryBeret_CDF,		*,		27,		7
+		MilitaryBeret_NZ,		*,		27,		7
+		BeanieHat_Pink,			*,		30,		8
+		BeanieHat_Red,			*,		30,		8
+		BeanieHat_Blue,			*,		30,		8
+		BeanieHat_Grey,			*,		30,		8
+		BeanieHat_Beige,		*,		30,		8
+		BeanieHat_Brown,		*,		30,		8
+		BeanieHat_Black,		*,		31,		8
+		BeanieHat_Green,		*,		32,		9
+		FlatCap_Red,			*,		32,		8
+		FlatCap_Blue,			*,		32,		8
+		FlatCap_BrownCheck,		*,		32,		8
+		FlatCap_GreyCheck,		*,		32,		8
+		FlatCap_Grey,			*,		32,		8
+		FlatCap_Brown,			*,		32,		8
+		FlatCap_Black,			*,		32,		8
+		FlatCap_BlackCheck,		*,		32,		8
+		ZmijovkaCap_Red,		*,		36,		9
+		ZmijovkaCap_Blue,		*,		36,		9
+		ZmijovkaCap_Brown,		*,		36,		9
+		ZmijovkaCap_Black,		*,		37,		9
+		ZmijovkaCap_Green,		*,		38,		10
+		RadarCap_Red,			*,		40,		10
+		RadarCap_Blue,			*,		40,		10
+		RadarCap_Brown,			*,		40,		10
+		RadarCap_Black,			*,		42,		10
+		RadarCap_Green,			*,		45,		12
+		Ushanka_Blue,			*,		50,		15
+		Ushanka_Black,			*,		50,		15
+		Ushanka_Green,			*,		55,		18
+		NBCHoodGray,			*,		100,	30		
+
+	<Category> Helmets
+		ConstructionHelmet_Yellow,*,	30,		7
+		ConstructionHelmet_Orange,*,	30,		7
+		ConstructionHelmet_Red,	*,		30,		7
+		ConstructionHelmet_Blue,*,		30,		7
+		ConstructionHelmet_White,*,		30,		7
+		ConstructionHelmet_Lime,*,		33,		8
+		SkateHelmet_Red,		*,		45,		12
+		SkateHelmet_Blue,		*,		45,		12
+		SkateHelmet_Gray,		*,		45,		12
+		SkateHelmet_Black,		*,		47,		12
+		SkateHelmet_Green,		*,		50,		13
+		HockeyHelmet_Red,		*,		50,		13
+		HockeyHelmet_Blue,		*,		50,		13
+		HockeyHelmet_White,		*,		50,		13
+		HockeyHelmet_Black,		*,		55,		14
+		DirtBikeHelmet_Mouthguard,*,	15,		4
+		DirtBikeHelmet_Visor,	*,		25,		8
+		DirtBikeHelmet_Red,		*,		60,		15
+		DirtBikeHelmet_Blue,	*,		60,		15
+		DirtBikeHelmet_Police,	*,		60,		15
+		DirtBikeHelmet_Green,	*,		60,		15
+		DirtBikeHelmet_Chernarus,*,		60,		15
+		DirtBikeHelmet_Black,	*,		65,		16
+		DirtBikeHelmet_Khaki,	*,		70,		18
+		MotoHelmet_Red,			*,		70,		18
+		MotoHelmet_Blue,		*,		70,		18
+		MotoHelmet_White,		*,		70,		18
+		MotoHelmet_Lime,		*,		70,		18
+		MotoHelmet_Grey,		*,		75,		18
+		MotoHelmet_Black,		*,		75,		20
+		MotoHelmet_Green,		*,		80,		22
+		DarkMotoHelmet_Red,		*,		80,		22
+		DarkMotoHelmet_Blue,	*,		80,		22
+		DarkMotoHelmet_White,	*,		80,		22
+		DarkMotoHelmet_Lime,	*,		80,		22
+		DarkMotoHelmet_Grey,	*,		80,		22
+		DarkMotoHelmet_Black,	*,		85,		23
+		DarkMotoHelmet_Green,	*,		90,		25
+		TankerHelmet,			*,		100,	25
+		GreatHelm,				*,		120,	30
+		ZSh3PilotHelmet,		*,		130,	35
+		FirefightersHelmet_Yellow,*,	150,	40
+		FirefightersHelmet_Red,	*,		150,	40
+		FirefightersHelmet_White,*,		150,	40
+		Mich2001Helmet,			*,		150,	40
+		GorkaHelmetVisor,		*,		50,		20
+		GorkaHelmet,			*,		190,	50
+		Ssh68Helmet,			*,		250,	80
+		BallisticHelmet_UN,		*,		250,	80
+		BallisticHelmet_Black,	*,		300,	100
+		BallisticHelmet_Green,	*,		350,	110
+
+	<Category> Masks
+		SurgicalMask,			*,		15,		3
+		BandanaMask_PolkaPattern,*,		25,		6
+		BandanaMask_RedPattern,	*,		25,		6
+		BandanaMask_BlackPattern,*,		25,		6
+		BandanaMask_GreenPattern,*,		30,		8
+		BandanaMask_CamoPattern,*,		35,		10
+		NioshFaceMask,			*,		40,		10
+		HockeyMask,				*,		40,		10
+		//HoxtonMask,			*,		40,		10
+		//WolfMask,				*,		40,		10
+		//DallasMask,			*,		40,		10
+		Balaclava3Holes_Blue,	*,		50,		12
+		Balaclava3Holes_Beige,	*,		50,		12
+		Balaclava3Holes_Black,	*,		55,		13
+		Balaclava3Holes_Green,	*,		60,		15
+		WeldingMask,			*,		70,		20
+		GP5GasMask,				*,		120,	40
+
+	<Category> Shirts
+		TShirt_OrangeWhiteStripes,*,	8,		2
+		TShirt_RedBlackStripes,	*,		8,		2
+		TShirt_Red,				*,		8,		2
+		TShirt_Blue,			*,		8,		2
+		TShirt_White,			*,		10,		2
+		TShirt_Grey,			*,		10,		2
+		TShirt_Beige,			*,		10,		2
+		TShirt_Black,			*,		12,		3
+		TShirt_Green,			*,		12,		3
+		TelnyashkaShirt,		*,		14,		3
+		Shirt_RedCheck,			*,		16,		4
+		Shirt_BlueCheckBright,	*,		16,		4	
+		Shirt_BlueCheck,		*,		16,		4
+		Shirt_WhiteCheck,		*,		16,		4
+		Shirt_PlaneBlack,		*,		17,		4
+		Shirt_GreenCheck,		*,		18,		4
+		Blouse_Violet,			*,		16,		4
+		Blouse_Blue,			*,		16,		4
+		Blouse_White,			*,		16,		4
+		Blouse_Green,			*,		18,		4
+		MedicalScrubsShirt_Blue,*,		20,		5
+		MedicalScrubsShirt_White,*,		20,		5
+		MedicalScrubsShirt_Green,*,		20,		5
+		ChernarusSportShirt,	*,		25,		6
+		TacticalShirt_Grey,		*,		36,		10
+		TacticalShirt_Tan,		*,		37,		10
+		TacticalShirt_Black,	*,		38,		10
+		TacticalShirt_Olive,	*,		40,		12	
+
+	<Category> Hoodies & Sweater
+		Sweater_Red,			*,		20,		5
+		Sweater_Blue,			*,		20,		5
+		Sweater_Gray,			*,		20,		5
+		Sweater_Green,			*,		25,		6
+		//Hoodie_DrJ0nes,		*,		30,		6
+		//Hoodie_GraffitiTiles,	*,		30,		6
+		Hoodie_Red,				*,		30,		6
+		Hoodie_Blue,			*,		30,		6
+		Hoodie_Grey,			*,		30,		6
+		Hoodie_Brown,			*,		30,		6
+		Hoodie_Black,			*,		30,		6
+		Hoodie_Green,			*,		35,		7
+		
+	<Category> Vests
+		ReflexVest,				*,		5,		1
+		PoliceVest,				*,		35,		10
+		HuntingVest,			*,		55,		18
+		PressVest_LightBlue,	*,		85,		28
+		PressVest_Blue,			*,		90,		30
+		UKAssVest_Black,		*,		90,		30
+		UKAssVest_Khaki,		*,		90,		30
+		UKAssVest_Olive,		*,		90,		30
+		UKAssVest_Camo,			*,		100,	35
+		SmershVest,				*,		150,	50
+		HighCapacityVest_Black,	*,		200,	60
+		HighCapacityVest_Olive,	*,		230,	75
+		PlateCarrierVest,		*,		250,	80
+
+	<Category> Jackets & Coats
+		LabCoat,				*,		10,		2
+		TrackSuitJacket_Red,	*,		15,		3
+		TrackSuitJacket_LightBlue,*,	15,		3
+		TrackSuitJacket_Blue,	*,		15,		3
+		TrackSuitJacket_Black,	*,		15,		3
+		TrackSuitJacket_Green,	*,		15,		3
+		DenimJacket,			*,		18,		4
+		ManSuit_Blue,			*,		18,		4
+		ManSuit_White,			*,		18,		4
+		ManSuit_LightGrey,		*,		18,		4
+		ManSuit_DarkGrey,		*,		18,		4
+		ManSuit_Beige,			*,		18,		4
+		ManSuit_Brown,			*,		18,		4
+		ManSuit_Black,			*,		18,		4
+		ManSuit_Khaki,			*,		18,		4
+		WomanSuit_Blue,			*,		18,		4
+		WomanSuit_White,		*,		18,		4
+		WomanSuit_LightGrey,	*,		18,		4
+		WomanSuit_DarkGrey,		*,		18,		4
+		WomanSuit_Beige,		*,		18,		4
+		WomanSuit_Brown,		*,		18,		4
+		WomanSuit_Black,		*,		18,		4
+		WomanSuit_Khaki,		*,		18,		4
+		WoolCoat_Red,			*,		18,		4
+		WoolCoat_RedCheck,		*,		18,		4
+		WoolCoat_Blue,			*,		18,		4
+		WoolCoat_BlueCheck,		*,		18,		4
+		WoolCoat_GreyCheck,		*,		18,		4
+		WoolCoat_BrownCheck,	*,		18,		4
+		WoolCoat_Beige,			*,		18,		4
+		WoolCoat_Black,			*,		19,		4
+		WoolCoat_BlackCheck,	*,		19,		4
+		WoolCoat_Green,			*,		20,		5
+		RidersJacket_Black,		*,		20,		5
+		FirefighterJacket_Beige,*,		24,		6
+		FirefighterJacket_Black,*,		24,		6
+		JumpsuitJacket_Red,		*,		26,		6
+		JumpsuitJacket_Blue,	*,		26,		6
+		JumpsuitJacket_Gray,	*,		26,		6
+		JumpsuitJacket_Green,	*,		26,		6
+		BomberJacket_Maroon,	*,		26,		6
+		BomberJacket_SkyBlue,	*,		26,		6
+		BomberJacket_Blue,		*,		26,		6
+		BomberJacket_Grey,		*,		26,		6
+		BomberJacket_Brown,		*,		26,		6
+		BomberJacket_Black,		*,		28,		7
+		BomberJacket_Olive,		*,		30,		7
+		QuiltedJacket_Orange,	*,		26,		6
+		QuiltedJacket_Yellow,	*,		26,		6
+		QuiltedJacket_Red,		*,		26,		6
+		QuiltedJacket_Violet,	*,		26,		6
+		QuiltedJacket_Blue,		*,		26,		6
+		QuiltedJacket_Grey,		*,		26,		6
+		QuiltedJacket_Black,	*,		28,		7
+		QuiltedJacket_Green,	*,		30,		7
+		PrisonUniformJacket,	*,		28,		7
+		PoliceJacketOrel,		*,		32,		8
+		PoliceJacket,			*,		34,		8
+		ParamedicJacket_Crimson,*,		36,		9
+		ParamedicJacket_Blue,	*,		36,		9
+		ParamedicJacket_Green,	*,		36,		9
+		HikingJacket_Red,		*,		36,		9
+		HikingJacket_Blue,		*,		38,		9
+		HikingJacket_Black,		*,		38,		9
+		HikingJacket_Green,		*,		40,		10
+		Raincoat_Pink,			*,		70,		15
+		Raincoat_Orange,		*,		70,		15
+		Raincoat_Yellow,		*,		70,		15
+		Raincoat_Red,			*,		70,		15
+		Raincoat_Blue,			*,		70,		15
+		Raincoat_Black,			*,		80,		20
+		Raincoat_Green,			*,		100,	25
+		TTsKOJacket_Camo,		*,		100,	25
+		BDUJacket,				*,		100,	25
+		HuntingJacket_Winter,	*,		120,	35
+		HuntingJacket_Brown,	*,		120,	35
+		HuntingJacket_Autumn,	*,		120,	35
+		HuntingJacket_Spring,	*,		120,	35
+		HuntingJacket_Summer,	*,		120,	35
+		M65Jacket_Tan,			*,		130,	40
+		M65Jacket_Black,		*,		130,	40
+		M65Jacket_Khaki,		*,		130,	40
+		M65Jacket_Olive,		*,		130,	40
+		GorkaEJacket_Autumn,	*,		140,	45
+		GorkaEJacket_Flat,		*,		140,	45
+		GorkaEJacket_PautRev,	*,		140,	45
+		GorkaEJacket_Summer,	*,		140,	45
+		USMCJacket_Desert,		*,		140,	45
+		USMCJacket_Woodland,	*,		155,	55
+		NBCJacketGray,			*,		250,	80
+
+	<Category> Skirts & Dresses
+		Skirt_Yellow,			*,		30,		10
+		Skirt_Red,				*,		30,		10
+		Skirt_Blue,				*,		30,		10
+		Skirt_White,			*,		30,		10
+		MiniDress_Pink,			*,		35,		10
+		MiniDress_PinkChecker,	*,		35,		10
+		MiniDress_RedChecker,	*,		35,		10
+		MiniDress_BlueChecker,	*,		35,		10
+		MiniDress_BlueWithDots,	*,		35,		10
+		MiniDress_WhiteChecker,	*,		35,		10
+		MiniDress_BrownChecker,	*,		35,		10
+		MiniDress_GreenChecker,	*,		35,		10
+		NurseDress_Blue,		*,		40,		10
+		NurseDress_White,		*,		40,		10
+
+	<Category> Pants
+		MedicalScrubsPants_Blue,*,		10,		2
+		MedicalScrubsPants_White,*,		10,		2
+		MedicalScrubsPants_Green,*,		10,		2
+		TrackSuitPants_Red,		*,		15,		3
+		TrackSuitPants_LightBlue,*,		15,		3
+		TrackSuitPants_Blue,	*,		15,		3
+		TrackSuitPants_Black,	*,		15,		3
+		TrackSuitPants_Green,	*,		15,		3
+		PrisonUniformPants,		*,		17,		4
+		Breeches_Pink,			*,		20,		5
+		Breeches_Red,			*,		20,		5
+		Breeches_Blue,			*,		20,		5
+		Breeches_White,			*,		20,		5
+		Breeches_Beetcheck,		*,		20,		5
+		Breeches_Beige,			*,		21,		5
+		Breeches_Browncheck,	*,		21,		5
+		Breeches_Black,			*,		22,		5
+		Breeches_Blackcheck,	*,		22,		5
+		Breeches_Green,			*,		24,		6
+		SlacksPants_Blue,		*,		20,		5
+		SlacksPants_White,		*,		20,		5
+		SlacksPants_LightGrey,	*,		20,		5
+		SlacksPants_DarkGrey,	*,		20,		5
+		SlacksPants_Beige,		*,		20,		5
+		SlacksPants_Brown,		*,		21,		5
+		SlacksPants_Black,		*,		22,		5
+		SlacksPants_Khaki,		*,		24,		6
+		CanvasPantsMidi_Red,	*,		24,		6
+		CanvasPantsMidi_Violet,	*,		24,		6
+		CanvasPantsMidi_Blue,	*,		24,		6
+		CanvasPantsMidi_Grey,	*,		24,		6
+		CanvasPantsMidi_Beige,	*,		25,		6	
+		CanvasPants_Red,		*,		26,		6
+		CanvasPants_Violet,		*,		26,		6
+		CanvasPants_Blue,		*,		26,		6
+		CanvasPants_Grey,		*,		26,		6
+		CanvasPants_Beige,		*,		28,		6
+		JumpsuitPants_Red,		*,		28,		6
+		JumpsuitPants_Blue,		*,		28,		6
+		JumpsuitPants_Grey,		*,		28,		6
+		JumpsuitPants_Green,	*,		28,		6
+		PolicePants,			*,		28,		6
+		ParamedicPants_Crimson,	*,		35,		8
+		ParamedicPants_Blue,	*,		35,		8
+		ParamedicPants_Green,	*,		35,		8
+		FirefightersPants_Beige,*,		35,		8
+		FirefightersPants_Black,*,		35,		8
+		CargoPants_Blue,		*,		35,		8
+		CargoPants_Grey,		*,		35,		8
+		CargoPants_Beige,		*,		35,		8
+		CargoPants_Black,		*,		35,		8
+		CargoPants_Green,		*,		35,		8
+		ShortJeans_Red,			*,		38,		8
+		ShortJeans_Blue,		*,		38,		8
+		ShortJeans_Darkblue,	*,		38,		8
+		ShortJeans_Brown,		*,		38,		8
+		ShortJeans_Black,		*,		40,		10
+		ShortJeans_Green,		*,		42,		10
+		Jeans_Blue,				*,		40,		10
+		Jeans_BlueDark,			*,		40,		10
+		Jeans_Grey,				*,		40,		10
+		Jeans_Brown,			*,		40,		10
+		Jeans_Black,			*,		42,		10
+		Jeans_Green,			*,		45,		12	
+		TTSKOPants,				*,		55,		15
+		BDUPants,				*,		65,		18
+		USMCPants_Desert,		*,		65,		18
+		USMCPants_Woodland,		*,		70,		20
+		PolicePantsOrel,		*,		70,		20
+		HunterPants_Winter,		*,		90,		25
+		HunterPants_Brown,		*,		100,	30
+		HunterPants_Spring,		*,		100,	30
+		HunterPants_Autumn,		*,		100,	30
+		HunterPants_Summer,		*,		100,	30
+		GorkaPants_Flat,		*,		130,	40
+		GorkaPants_PautRev,		*,		130,	40
+		GorkaPants_Autumn,		*,		130,	40
+		GorkaPants_Summer,		*,		130,	40
+		NBCPantsGray,			*,		200,	65
+	
+	<Category> Shoes & Boots
+		AthleticShoes_Blue,		*,		17,		4
+		AthleticShoes_Grey,		*,		20,		5
+		AthleticShoes_Brown,	*,		20,		5
+		AthleticShoes_Black,	*,		23,		5
+		AthleticShoes_Green,	*,		23,		5
+		JoggingShoes_Violet,	*,		30,		7
+		JoggingShoes_Red,		*,		30,		7
+		JoggingShoes_Blue,		*,		30,		7
+		JoggingShoes_White,		*,		30,		7
+		JoggingShoes_Black,		*,		30,		7
+		Sneakers_Red,			*,		30,		7
+		Sneakers_White,			*,		30,		7
+		Sneakers_Gray,			*,		30,		7
+		Sneakers_Black,			*,		31,		7
+		Sneakers_Green,			*,		32,		7
+		DressShoes_White,		*,		32,		7
+		DressShoes_Brown,		*,		35,		8
+		DressShoes_Black,		*,		35,		8
+		DressShoes_Beige,		*,		35,		8
+		DressShoes_Sunburst,	*,		35,		8
+		HikingBootsLow_Blue,	*,		45,		12
+		HikingBootsLow_Grey,	*,		45,		12
+		HikingBootsLow_Beige,	*,		48,		13
+		HikingBootsLow_Black,	*,		50,		14
+		WorkingBoots_Yellow,	*,		55,		12
+		WorkingBoots_Grey,		*,		60,		15
+		WorkingBoots_Beige,		*,		60,		15
+		WorkingBoots_Brown,		*,		60,		15
+		WorkingBoots_Green,		*,		65,		17
+		HikingBoots_Brown,		*,		75,		20
+		HikingBoots_Black,		*,		75,		20
+		CombatBoots_Grey,		*,		80,		22
+		CombatBoots_Beige,		*,		80,		22
+		CombatBoots_Brown,		*,		80,		22
+		CombatBoots_Black,		*,		80,		22
+		CombatBoots_Green,		*,		80,		22
+		JungleBoots_Beige,		*,		85,		24
+		JungleBoots_Brown,		*,		85,		24
+		JungleBoots_Black,		*,		85,		24
+		JungleBoots_Olive,		*,		85,		24
+		JungleBoots_Green,		*,		85,		24
+		Wellies_Grey,			*,		85,		25
+		Wellies_Brown,			*,		85,		25
+		Wellies_Black,			*,		85,		25
+		Wellies_Green,			*,		90,		28
+		TTSKOBoots,				*,		100,	35
+		MilitaryBoots_Redpunk,	*,		100,	35
+		MilitaryBoots_Bluerock,	*,		105,	35
+		MilitaryBoots_Beige,	*,		110,	35
+		MilitaryBoots_Brown,	*,		110,	35
+		MilitaryBoots_Black,	*,		110,	35
+		NBCBootsGray,			*,		150,	50
+
+	<Category> Ghillie
+		// Keep in Mind that Players can also 
+		// craft Ghillie Clothing and sell them!
+		GhillieAtt_Mossy,		*,		220,	70
+		GhillieAtt_Tan,			*,		220,	70
+		GhillieAtt_Woodland,	*,		220,	70
+		GhillieHood_Mossy,		*,		220,	70
+		GhillieHood_Tan,		*,		220,	70
+		GhillieHood_Woodland,	*,		220,	70
+		GhillieBushrag_Mossy,	*,		400,	130
+		GhillieBushrag_Tan,		*,		400,	130
+		GhillieBushrag_Woodland,*,		400,	130
+		GhillieTop_Mossy,		*,		600,	200
+		GhillieTop_Tan,			*,		600,	200
+		GhillieTop_Woodland,	*,		600,	200
+		GhillieSuit_Mossy,		*,		1000,	300
+		GhillieSuit_Tan,		*,		1000,	300
+		GhillieSuit_Woodland,	*,		1000,	300
+		
+	//<Category> Seasonal
+		//SantasBeard,			*,		15,		0
+		//SantasHat,			*,		35,		0
+		//PumpkinHelmet,		*,		50,		0
+
+	<Category> Holster & Pouches
+		ChestHolster,			*,		60,		20
+		PlateCarrierHolster,	*,		60,		20
+		PlateCarrierPouches,	*,		100,		20
+		
+	<Category> Belt
+		CivilianBelt,			*,		100,	30
+		MilitaryBelt,			*,		100,	30
+		
+	<Category> Bags
+		ChildBag_Red,			*,		20,		5
+		ChildBag_Blue,			*,		20,		5
+		ChildBag_Green,			*,		25,		6
+		DryBag_Yellow,			*,		30,		8
+		DryBag_Orange,			*,		30,		8
+		DryBag_Red,				*,		30,		8
+		DryBag_Blue,			*,		30,		8
+		DryBag_Black,			*,		35,		8
+		DryBag_Green,			*,		40,		10
+		TaloonBag_Orange,		*,		50,		10
+		TaloonBag_Violet,		*,		50,		10
+		TaloonBag_Blue,			*,		50,		10
+		TaloonBag_Green,		*,		70,		20
+		SmershBag,				*,		100,	30
+		WaterproofBag_Yellow,	*,		100,	30
+		WaterproofBag_Orange,	*,		100,	30
+		WaterproofBag_Green,	*,		110,	30
+		AssaultBag_Black,		*,		110,	30
+		AssaultBag_Green,		*,		110,	30
+		AssaultBag_Ttsko,		*,		130,	30
+		HuntingBag,				*,		130,	30
+		TortillaBag,			*,		180,	60
+		CoyoteBag_Brown,		*,		180,	60
+		CoyoteBag_Green,		*,		180,	60
+		MountainBag_Orange,		*,		300,	80
+		MountainBag_Red,		*,		300,	80
+		MountainBag_Blue,		*,		300,	80
+		MountainBag_Green,		*,		360,	100
+		AliceBag_Black,			*,		400,	150
+		AliceBag_Green,			*,		400,	150
+		AliceBag_Camo,			*,		500,	220
+
+	//<Category> Handmade
+		//LeatherGloves_Beige,	*,		0,		0
+		//LeatherGloves_Black,	*,		0,		0
+		//LeatherGloves_Brown,	*,		0,		0
+		//LeatherGloves_Natural,*,		0,		0
+		//LeatherHat_Beige,		*,		0,		0
+		//LeatherHat_Black,		*,		0,		0
+		//LeatherHat_Brown,		*,		0,		0
+		//LeatherHat_Natural,	*,		0,		0
+		//LeatherShirt_Natural,	*,		0,		0
+		//LeatherStorageVest_Beige,*,	0,		0
+		//LeatherStorageVest_Black,*,	0,		0
+		//LeatherStorageVest_Brown,*,	0,		0
+		//LeatherStorageVest_Natural,*,	0,		0
+		//LeatherJacket_Beige,	*,		0,		0
+		//LeatherJacket_Black,	*,		0,		0
+		//LeatherJacket_Brown,	*,		0,		0
+		//LeatherJacket_Natural,*,		0,		0
+		//LeatherPants_Beige,	*,		0,		0
+		//LeatherPants_Black,	*,		0,		0
+		//LeatherPants_Brown,	*,		0,		0
+		//LeatherPants_Natural,	*,		0,		0
+		//LeatherShoes_Beige,	*,		0,		0
+		//LeatherShoes_Black,	*,		0,		0
+		//LeatherShoes_Brown,	*,		0,		0
+		//LeatherShoes_Natural,	*,		0,		0
+		//CourierBag,			*,		0,		0
+		//FurCourierBag,		*,		0,		0
+		//FurImprovisedBag,		*,		0,		0
+		//ImprovisedBag,		*,		0,		0
+		//LeatherSack_Beige,	*,		0,		0
+		//LeatherSack_Black,	*,		0,		0
+		//LeatherSack_Brown,	*,		0,		0
+		//LeatherSack_Natural,	*,		0,		0
+	
+	<Category>MMG goggles
+		mmg_tac_goggles_red_green,		                    	*,		5000,		500
+		mmg_tac_goggles_red_black,		                    	*,		5000,		500
+		mmg_tac_goggles_red_tan,		                    	*,		5000,		500
+
+	<Category>MMG Armored Helmet/visor
+		mmg_armored_helmet_green,		                    	*,		5000,		500
+		mmg_armored_helmet_black,		                    	*,		5000,		500
+		mmg_armored_helmet_tan,		                    	*,		5000,		500
+		mmg_armored_helmet_visor_tan,		                    	*,		5000,		500
+		mmg_armored_helmet_visor_black,		                    	*,		5000,		500
+		mmg_armored_helmet_visor_green,		                    	*,		5000,		500
+
+
+	<Category>MMG Sniper Boonie
+		mmg_boonie_green,		                    	*,		5000,		500
+		mmg_boonie_black,		                    	*,		5000,		500
+		mmg_boonie_tan,		                    	*,		5000,		500
+		mmg_boonie_erdl,		                    	*,		5000,		500
+		mmg_boonie_multicam,		                *,		5000,		500
+		mmg_boonie_multicamblack,		                *,		5000,		500
+		mmg_boonie_alpine,		                    	*,		5000,		500
+		mmg_boonie_dark_woodland,		                *,		5000,		500
+		mmg_boonie_ucp,		                    	*,		5000,		500
+		mmg_boonie_multicam_tropic,		                   *,		5000,		500
+
+
+	<Category>MMG Chest Rig
+		mmg_chestrig_green, *,   2500,  1000
+		mmg_chestrig_black, *,   2500,  1000
+		mmg_chestrig_tan, *,   2500,  1000
+		mmg_chestrig_erdl, *,   2500,  1000
+		mmg_chestrig_multicam, *,   2500,  1000
+		mmg_chestrig_multicamblack, *,   2500,  1000
+			
+		mmg_chestrig_alpine, *,   2500,  1000
+		mmg_chestrig_dark_woodland, *,   2500,  1000
+		mmg_chestrig_ucp, *,   2500,  1000
+		mmg_chestrig_multicam_tropic, *,   2500,  1000
+		
+	<Category>MMG Plate Carriers
+		MMG_JPC_Vest_Black, *,   5000,  1000
+		MMG_JPC_Vest_olive, *,   5000,  1000
+		MMG_JPC_Vest_tan, *,   5000,  1000
+		MMG_JPC_Vest_multicam, *,   5000,  1000
+			
+		MMG_JPC_Vest_alpine, *,   5000,  1000
+		MMG_JPC_Vest_erdl, *,   5000,  1000
+		MMG_JPC_Vest_multicamblack, *,   5000,  1000
+		MMG_JPC_Vest_multicam_tropic, *,   5000,  1000
+		MMG_JPC_Vest_ucp, *,   5000,  1000
+		MMG_JPC_Vest_dark_woodland, *,   5000,  1000
+			
+	<Category>MMG Tactical-TEC Vest
+		MMG_tt_vest_black, *,   5000,  1000
+		MMG_tt_vest_green, *,   5000,  1000
+		MMG_tt_vest_tan, *,   5000,  1000
+		MMG_tt_vest_mutlicam, *,   5000,  1000
+			
+		MMG_tt_vest_alpine, *,   5000,  1000
+		MMG_tt_vest_erdl, *,   5000,  1000
+		MMG_tt_vest_multicamblack, *,   5000,  1000
+		MMG_tt_vest_dark_woodland, *,   5000,  1000
+		MMG_tt_vest_ucp, *,   5000,  1000
+		MMG_tt_vest_police, *,   5000,  1000
+		MMG_tt_vest_multicam_tropic, *,   5000,  1000
+		MMG_tt_vest_admin, *,   -1,  150000
+			
+	<Category>MMG MK-III Armor
+		MMG_MK_III_Armor_black, *,   15000,  2000
+		MMG_MK_III_Armor_green, *,   15000,  2000
+		MMG_MK_III_Armor_tan, *,   15000,  2000
+		MMG_MK_III_Armor_multicamblack, *,   15000,  2000
+		
+		MMG_MK_III_Armor_multicam, *,   15000,  2000
+		MMG_MK_III_Armor_erdl, *,   15000,  2000
+		MMG_MK_III_Armor_alpine, *,   15000,  2000
+		MMG_MK_III_Armor_dark_woodland, *,   7500,  2000
+		MMG_MK_III_Armor_ucp, *,   15000,  2000
+		MMG_MK_III_Armor_multicam_tropic, *,   15000,  2000
+			
+		
+	<Category>MMG Pouches
+		MMG_Mag_Pouch_Black,  *, 2500,  500
+		MMG_Mag_Pouch_olive,  *, 2500,  500
+		MMG_Mag_Pouch_tan,  *, 2500,  500
+		MMG_Mag_Pouch_multicam,  *, 2500,  500
+		
+		MMG_Mag_Pouch_alpine,  *, 2500,  500
+		MMG_Mag_Pouch_erdl,  *, 2500,  500
+		MMG_Mag_Pouch_dark_woodland,  *, 2500,  500
+		MMG_Mag_Pouch_ucp,  *, 2500,  500
+		MMG_Mag_Pouch_multicam_tropic,  *, 2500,  500
+		MMG_Mag_Pouch_multicamblack,  *, 2500,  500
+		MMG_double_magpouch_black,  *, 3500,  500
+		MMG_double_magpouch_green,  *, 3500,  500
+		MMG_double_magpouch_tan,  *, 3500,  500
+		MMG_double_magpouch_multicam,  *, 3500,  500
+			
+		MMG_double_magpouch_alpine,  *, 3500,  500
+		MMG_double_magpouch_erdl,  *, 3500,  500
+		MMG_double_magpouch_multicamblack,  *, 3500,  500
+		MMG_double_magpouch_dark_woodland,  *, 3500,  500
+		MMG_double_magpouch_ucp,  *, 3500,  500
+		MMG_double_magpouch_multicam_tropic,  *, 3500,  500
+		MMG_triple_magpouch_multicam_tropic,  *, 3500,  500
+		MMG_triple_magpouch_dark_woodland,  *, 3500,  500
+		MMG_triple_magpouch_alpine,  *, 3500,  500
+		MMG_triple_magpouch_green,  *, 3500,  500
+		MMG_triple_magpouch_erdl,  *, 3500,  500
+		MMG_triple_magpouch_ucp,  *, 3500,  500
+		MMG_triple_magpouch_multicamblack,  *, 3500,  500
+		MMG_triple_magpouch_tan,  *, 3500,  500
+		MMG_triple_magpouch_multicam,  *, 3500,  500
+		MMG_triple_magpouch_black,  *, 3500,  500
+
+
+
+		MMG_Med_Pouch_black,  *, 2500,  500
+		MMG_Med_Pouch_multicam,  *, 2500,  500
+		MMG_Med_Pouch_Olive,  *, 2500,  500
+		
+		MMG_Med_Pouch_alpine,  *, 2500,  500
+		MMG_Med_Pouch_erdl,  *, 2500,  500
+		MMG_Med_Pouch_multicamblack,  *, 2500,  500
+		MMG_Med_Pouch_dark_woodland,  *, 2500,  500
+		MMG_Med_Pouch_ucp,  *, 2500,  500
+		MMG_Med_Pouch_multicam_tropic,  *, 2500,  500
+		MMG_ammo_pouch_black,  *, 2500,  500
+		MMG_ammo_pouch_olive,  *, 2500,  500
+		MMG_ammo_pouch_multicam,  *, 2500,  500
+		MMG_ammo_pouch_tan,  *, 2500,  500
+			
+		MMG_ammo_pouch_alpine,  *, 2500,  500
+		MMG_ammo_pouch_erdl,  *, 2500,  500
+		MMG_ammo_pouch_multicamblack,  *, 2500,  500
+		MMG_ammo_pouch_dark_woodland,  *, 2500,  500
+		MMG_ammo_pouch_ucp,  *, 2500,  500
+		MMG_ammo_pouch_multicam_tropic,  *, 2500,  500
+		MMG_tactical_pouch_tan,  *, 2500,  500
+		MMG_tactical_pouch_black,  *, 2500,  500
+		MMG_tactical_pouch_green,  *, 2500,  500
+			
+		MMG_tactical_pouch_alpine,  *, 2500,  500
+		MMG_tactical_pouch_erdl,  *, 2500,  500
+		MMG_tactical_pouch_multicamblack,  *, 2500,  500
+		MMG_tactical_pouch_dark_woodland,  *, 2500,  500
+		MMG_tactical_pouch_ucp,  *, 2500,  500
+		MMG_tactical_pouch_multicam_tropic,  *, 2500,  500
+
+	<Category>MMG Backpacks
+		MMG_carrier_backpack_black,   *,  7500, 2000
+		MMG_carrier_backpack_olive,   *,  7500, 2000
+		MMG_carrier_backpack_tan,   *,  7500, 2000
+		MMG_carrier_backpack_multicam,   *,  7500, 2000
+			
+		MMG_carrier_backpack_alpine,   *,  7500, 2000
+		MMG_carrier_backpack_erdl,   *,  7500, 2000
+		MMG_carrier_backpack_multicamblack,   *,  7500, 2000
+		MMG_carrier_backpack_dark_woodland
+		MMG_carrier_backpack_ucp
+		MMG_carrier_backpack_multicam_tropic
+		MMG_supplybag_black,   *,  7500, 2000
+		MMG_supplybag_green,   *,  7500, 2000			
+		MMG_supplybag_tan,   *,  7500, 2000
+			
+		MMG_supplybag_alpine,   *,  7500, 2000
+		MMG_supplybag_erdl,   *,  7500, 2000
+		MMG_supplybag_multicamblack,   *,  7500, 2000
+		MMG_supplybag_multicam,   *,  7500, 2000
+		MMG_supplybag_dark_woodland,   *,  7500, 2000
+		MMG_supplybag_ucp,   *,  7500, 2000
+		MMG_supplybag_multicam_tropic,   *,  7500, 2000
+		MMG_assault_pack_black,   *,  7500, 2000
+		MMG_assault_pack_olive,   *,  7500, 2000
+		MMG_assault_pack_tan,   *,  7500, 2000
+		MMG_assault_pack_dark_woodland,   *,  7500, 2000
+		MMG_assault_pack_erdl,   *,  7500, 2000
+		MMG_assault_pack_multicam,   *,  7500, 2000
+		MMG_assault_pack_multicamblack,   *,  7500, 2000
+			
+		MMG_assault_pack_alpine,   *,  7500, 2000
+		MMG_assault_pack_ucp,   *,  7500, 2000
+		MMG_assault_pack_mct,   *,  7500, 2000
+		MMG_camelback_tan,   *,  7500, 2000
+		MMG_camelback_black,   *,  7500, 2000
+		MMG_camelback_green,   *,  7500, 2000
+		MMG_camelback_multicamblack,   *,  7500, 2000
+		
+		MMG_camelback_multicam,   *,  7500, 2000
+		MMG_camelback_erdl,   *,  7500, 2000
+		MMG_camelback_alpine,   *,  7500, 2000
+		MMG_camelback_dark_woodland,   *,  7500, 2000
+		MMG_camelback_ucp,   *,  7500, 2000
+		MMG_camelback_multicam_tropic,   *,  7500, 2000
+
+	<Category>MMG Belt
+		MMG_falcon_b1_belt_olive,   *,  1000,   250
+		MMG_falcon_b1_belt_black,   *,  1000,   250
+		MMG_falcon_b1_belt_tan,   *,  1000,   250
+		
+		MMG_falcon_b1_belt_alpine,   *,  1000,   250
+		MMG_falcon_b1_belt_erdl,   *,  1000,   250
+		MMG_falcon_b1_belt_multicamblack,   *,  1000,   250
+		MMG_falcon_b1_belt_multicam,   *,  1000,   250
+		MMG_falcon_b1_belt_dark_woodland,   *,  1000,   250
+		MMG_falcon_b1_belt_ucp,   *,  1000,   250
+		MMG_falcon_b1_belt_multicam_tropic,   *,  1000,   250
+
+	<Category>MMG Helmets
+		MMG_tactical_helmet_black,   *,   2500,  500
+		MMG_tactical_helmet_green,   *,   2500,  500
+		MMG_tactical_helmet_tan,   *,   2500,  500
+		MMG_tactical_helmet_multicam,   *,   2500,  500
+			
+		MMG_tactical_helmet_alpine,   *,   2500,  500
+		MMG_tactical_helmet_erdl,   *,   2500,  500
+		MMG_tactical_helmet_multicamblack,   *,   2500,  500
+		MMG_tactical_helmet_dark_woodland,   *,   2500,  500
+		MMG_tactical_helmet_ucp,   *,   2500,  500
+		MMG_tactical_helmet_multicam_tropic,   *,   2500,  500
+		MMG_tactical_helmet_police,   *,   2500,  500
+		MMG_striker_helmet_rusty,   *,   7500,  500
+		MMG_striker_helmet_black,   *,   7500,  500
+		MMG_striker_helmet_green,   *,   7500,  500
+		MMG_striker_helmet_tan,   *,   7500,  500
+		MMG_striker_helmet_alpine,   *,   7500,  500
+		MMG_striker_helmet_erdl,   *,   7500,  500
+		MMG_striker_helmet_multicamblack,   *,   7500,  500
+		MMG_striker_helmet_multicam,   *,   7500,  500
+		MMG_striker_helmet_dark_woodland,   *,   7500,  500
+		MMG_striker_helmet_admin,   *,   7500,  500
+		MMG_striker_helmet_ucp,   *,   -1,  50000
+		MMG_striker_helmet_multicam_tropic,   *,   7500,  500
+
+	<Category>MMG Headphones
+		MMG_headphones_black,   *,   2500,  500
+		MMG_headphones_green,   *,   2500,  500
+		MMG_headphones_tan,   *,   2500,  500
+		MMG_headphones_ucp,   *,   2500,  500
+		MMG_ballistic_earcover_black,   *,   2500,  500
+		MMG_ballistic_earcover_green,   *,   2500,  500
+		MMG_ballistic_earcover_tan,   *,   2500,  500
+		MMG_ballistic_earcover_alpine,   *,   2500,  500
+		MMG_ballistic_earcover_erdl,   *,   2500,  500
+		MMG_ballistic_earcover_multicamblack,   *,   2500,  500
+
+	<Category>MMG Holster:
+		MMG_Holster_black,   *,   2500,  500
+		MMG_Holster_green,   *,   2500,  500
+		MMG_Holster_tan,   *,   2500,  500
+		MMG_Holster_alpine,   *,   2500,  500
+		MMG_Holster_erdl,   *,   2500,  500
+			
+		MMG_Holster_multicamblack,   *,   2500,  500
+		MMG_Holster_multicam,   *,   2500,  500
+		MMG_Holster_dark_woodland,   *,   2500,  500
+		MMG_Holster_ucp,   *,   2500,  500
+		MMG_Holster_multicam_tropic,   *,   2500,  500
+
+	<Category>MMG Sheath
+		MMG_sheath_black,   *,   2500,  500
+		MMG_sheath_olive,   *,   2500,  500
+		MMG_sheath_tan,   *,   2500,  500
+		MMG_sheath_mcb_digital,   *,   2500,  500
+		MMG_sheath_alpine,   *,   2500,  500
+		MMG_sheath_erdl,   *,   2500,  500
+		MMG_sheath_multicamblack,   *,   2500,  500
+		MMG_sheath_multicam,   *,   2500,  500
+		MMG_sheath_dark_woodland,   *,   2500,  500
+		MMG_sheath_ucp,   *,   2500,  500
+							
+	<Category>MMG Bottle
+		MMG_bottle_black,   *,   2500,  500
+		MMG_bottle_olive,   *,   2500,  500
+		MMG_bottle_tan,   *,   2500,  500
+		MMG_bottle_alpine,   *,   2500,  500
+		MMG_bottle_erdl,   *,   2500,  500
+		MMG_bottle_multicamblack,   *,   2500,  500
+		MMG_sheath_multicam_tropic,   *,   2500,  500
+		MMG_bottle_multicam,   *,   2500,  500
+		MMG_bottle_dark_woodland,   *,   2500,  500
+		MMG_bottle_ucp,   *,   2500,  500
+		MMG_bottle_multicam_tropic,   *,   2500,  500
+
+	<Category>MMG Carbine
+		MMG_carbine_red,   *,   2500,  500
+		MMG_carbine_green,   *,   2500,  500
+		MMG_carbine_orange,   *,   2500,  500
+		MMG_carbine_blue,   *,   2500,  500
+		MMG_carbine_black,   *,   2500,  500
+		MMG_carbine_grey,   *,   2500,  500
+
+	<Category>MMG Combatpants
+		MMG_combatpants_olive,   *,   2500,  500
+		MMG_combatpants_black,   *,   2500,  500
+		MMG_combatpants_tan,   *,   2500,  500
+		MMG_combatpants_alpine,   *,   2500,  500
+		MMG_combatpants_erdl,   *,   2500,  500
+		MMG_combatpants_multicamblack,   *,   2500,  500
+		MMG_combatpants_multicam,   *,   2500,  500
+		MMG_combatpants_erdl,   *,   2500,  500
+		MMG_combatpants_dark_woodland,   *,   2500,  500
+		MMG_combatpants_admin,   *,   -1,  50000
+		MMG_combatpants_ucp,   *,   2500,  500
+		MMG_combatpants_multicam_tropic,   *,   2500,  500
+		MMG_combatpants_police,   *,   2500,  500
+			
+	<Category>MMG Tactical Pants
+		mmg_tactical_pants_black,   *,   2500,  500
+		mmg_tactical_pants_green,   *,   2500,  500
+		mmg_tactical_pants_tan,   *,   2500,  500
+		mmg_tactical_pants_ucp,   *,   2500,  500
+		mmg_tactical_pants_multicam,   *,   2500,  500
+		mmg_tactical_pants_erdl,   *,   2500,  500
+		mmg_tactical_pants_atacs,   *,   2500,  500
+		mmg_tactical_pants_multicamblack,   *,   2500,  500
+		mmg_tactical_pants_multicam_tropic,   *,   2500,  500
+		mmg_tactical_pants_alpine,   *,   2500,  500
+		mmg_tactical_pants_dark_woodland,   *,   2500,  500
+
+	<Category>MMG Combatshirt
+		MMG_combatshirt_green,   *,   2500,  500
+		MMG_combatshirt_black,   *,   2500,  500
+		MMG_combatshirt_tan,   *,   2500,  500
+		MMG_combatshirt_alpine,   *,   2500,  500
+		MMG_combatshirt_erdl,   *,   2500,  500
+		MMG_combatshirt_multicamblack,   *,   2500,  500
+		MMG_combatshirt_multicam,   *,   2500,  500
+		MMG_combatshirt_dark_woodland,   *,   2500,  500
+			
+		MMG_combatshirt_admin,   *,   -1,  50000
+		MMG_combatshirt_ucp,   *,   2500,  500
+		MMG_combatshirt_multicam_tropic,   *,   2500,  500
+		MMG_combatshirt_police,   *,   2500,  500
+			
+		<Category>MMG Operator Shirt
+			MMG_operatorshirt_black,   *,   2500,  500
+			MMG_operatorshirt_green,   *,   2500,  500
+			MMG_operatorshirt_tan,   *,   2500,  500
+			MMG_operatorshirt_erdl,   *,   2500,  500
+			
+			MMG_operatorshirt_multicamblack,   *,   2500,  500
+			MMG_operatorshirt_multicam,   *,   2500,  500
+			MMG_operatorshirt_dark_woodland,   *,   2500,  500
+			MMG_operatorshirt_alpine,   *,   2500,  500
+			MMG_operatorshirt_ucp,   *,   2500,  500
+			MMG_operatorshirt_multicam_tropic,   *,   2500,  500
+		
+		<Category>MMG Tactical Shirt
+			MMG_tactical_shirt_ucp,   *,   2500,  500
+			MMG_tactical_shirt_black,   *,   2500,  500
+			MMG_tactical_shirt_green,   *,   2500,  500
+			MMG_tactical_shirt_tan,   *,   2500,  500
+			MMG_tactical_shirt_multicamblack,   *,   2500,  500
+			
+			MMG_tactical_shirt_erdl,   *,   2500,  500
+			MMG_tactical_shirt_dark_wl,   *,   2500,  500
+			MMG_tactical_shirt_alpine,   *,   2500,  500
+			MMG_tactical_shirt_multicam,   *,   2500,  500
+			MMG_tactical_shirt_multicam_tropic,   *,   2500,  500
+			
+		<Category>MMG Tactical Gloves
+			mmg_tactical_gloves_black,   *,   2500,  500
+			mmg_tactical_gloves_green,   *,   2500,  500
+			mmg_tactical_gloves_tan,   *,   2500,  500
+			mmg_tactical_gloves_multicam,   *,   2500,  500
+			mmg_tactical_gloves_multicamblack,   *,   2500,  500
+		
+			mmg_tactical_gloves_erdl,   *,   2500,  500
+			mmg_tactical_gloves_alpine,   *,   2500,  500
+			mmg_tactical_gloves_dark_woodland,   *,   2500,  500
+			mmg_tactical_gloves_ucp,   *,   2500,  500
+			mmg_tactical_gloves_multicam_tropic,   *,   2500,  500
+			
+		<Category>MMG Jungle Boots
+			MMG_boots_black,   *,   2500,  500
+			MMG_boots_green,   *,   2500,  500
+			MMG_boots_tan,   *,   2500,  500
+			MMG_boots_multicam,   *,   2500,  500
+			MMG_boots_multicamblack,   *,   2500,  500
+			
+			MMG_boots_erdl,   *,   2500,  500
+			MMG_boots_alpine,   *,   2500,  500
+			MMG_boots_dark_woodland,   *,   2500,  500
+			MMG_boots_ucp,   *,   2500,  500
+			MMG_boots_multicam_tropic,   *,   2500,  500
+			
+		<Category>MMG Facemask
+			MMG_facemask_green,   *,   2500,  500
+			MMG_facemask_black,   *,   2500,  500
+			MMG_facemask_tan,   *,   2500,  500
+			
+			MMG_facemask_alpine,   *,   2500,  500
+			MMG_facemask_erdl,   *,   2500,  500
+			MMG_facemask_multicamblack,   *,   2500,  500
+			MMG_facemask_multicam,   *,   2500,  500
+			MMG_facemask_dark_woodland,   *,   2500,  500
+			MMG_facemask_ucp,   *,   2500,  500
+			MMG_facemask_multicam_tropic,   *,   2500,  500
+			
+		<Category>MMG Facemask
+			MMG_balaclava_black,   *,   2500,  500
+			MMG_balaclava_olive,   *,   2500,  500
+			MMG_balaclava_tan,   *,   2500,  500
+			MMG_balaclava_erdl,   *,   2500,  500
+			MMG_balaclava_alpine,   *,   2500,  500
+			
+			MMG_balaclava_multicamblack,   *,   2500,  500
+			MMG_balaclava_multicam,   *,   2500,  500
+			MMG_balaclava_dark_woodland,   *,   2500,  500
+			MMG_balaclava_admin,   *,   -1,  50000
+			MMG_balaclava_ucp,   *,   2500,  500
+			MMG_balaclava_multicam_tropic,   *,   2500,  500
+		
+		<Category> MMG Heavy Armour
+			MMG_MK_V_Armor_black,							*,		75000,		15000
+			MMG_MK_V_Armor_green,							*,		75000,		15000
+			MMG_MK_V_Armor_tan,								*,		75000,		15000
+			MMG_MK_V_Armor_multicamblack,					*,		75000,		15000
+			
+			MMG_MK_V_Armor_multicam,						*,		75000,		15000
+			MMG_MK_V_Armor_alpine,							*,		75000,		15000
+			MMG_MK_V_Armor_dark_woodland,					*,		75000,		15000
+			MMG_MK_V_Armor_erdl,							*,		75000,		15000
+			MMG_MK_V_Armor_ucp,								*,		75000,		15000
+			MMG_MK_V_Armor_multicam_tropic,					*,		75000,		15000
+			MMG_mk5_utility_pouch_black,					*,		2500,		1000
+			MMG_mk5_utility_pouch_green,					*,		2500,		1000
+			MMG_mk5_utility_pouch_tan,						*,		2500,		1000
+			MMG_mk5_utility_pouch_multicamblack,			*,		2500,		1000
+			
+			MMG_mk5_utility_pouch_multicam,					*,		2500,		1000
+			MMG_mk5_utility_pouch_erdl,						*,		2500,		1000
+			MMG_mk5_utility_pouch_alpine,					*,		2500,		1000
+			MMG_mk5_utility_pouch_dark_woodland,			*,		2500,		1000
+			MMG_mk5_utility_pouch_ucp,						*,		2500,		1000
+			MMG_mk5_utility_pouch_multicam_tropic,			*,		2500,		1000
+			MMG_mk5_grenade_pouch_black,					*,		2500,		1000
+			MMG_mk5_grenade_pouch_green,					*,		2500,		1000
+			MMG_mk5_grenade_pouch_tan,						*,		2500,		1000
+			MMG_mk5_grenade_pouch_multicamblack,			*,		2500,		1000
+			
+			MMG_mk5_grenade_pouch_multicam,					*,		2500,		1000
+			MMG_mk5_grenade_pouch_alpine,					*,		2500,		1000
+			MMG_mk5_grenade_pouch_erdl,						*,		2500,		1000
+			MMG_mk5_grenade_pouch_dark_woodland,			*,		2500,		1000
+			MMG_mk5_grenade_pouch_ucp,						*,		2500,		1000
+			MMG_mk5_grenade_pouch_multicam_tropic,			*,		2500,		1000
+			
+			<Category> MMG Patches Rubber
+			MMG_patch_rubber_dayz,		                        *,		1000,		100
+			MMG_patch_rubber_511,		                        *,		1000,		100
+			MMG_patch_rubber_driver,		                        *,		1000,		100
+			MMG_patch_rubber_medic,		                        *,		1000,		100
+			MMG_patch_rubber_pilot,		                        *,		1000,		100
+			MMG_patch_rubber_toxic,		                        *,		1000,		100
+			
+			mmg_tactical_pants_dark_woodland,		                        *,		1000,		100
+			MMG_patch_rubber_livonia_special,		                        *,		1000,		100
+			MMG_patch_rubber_namalsk_special,		                        *,		1000,		100
+			
+			MMG_patch_rubber_bushcraft,		                    *,		1000,		100
+			MMG_patch_rubber_bushcraft1,		                        *,		1000,		100
+			MMG_patch_rubber_police,		                    *,		1000,		100
+			MMG_patch_rubber_punisher,		                    *,		1000,		100
+			MMG_patch_rubber_rangers,		            		*,		1000,		100
+			MMG_patch_rubber_eod,		                        *,		1000,		100
+			MMG_patch_rubber_mmg,		                   		*,		1000,		100
+			MMG_patch_rubber_sniper1,		                    *,		1000,		100
+			MMG_patch_rubber_australia,		                    *,		1000,		100
+			MMG_patch_rubber_austria,		                    *,		1000,		100
+			MMG_patch_rubber_austria1,		                	*,		1000,		100
+			MMG_patch_rubber_germany,		                    *,		1000,		100
+			MMG_patch_rubber_sweden,		                    *,		1000,		100
+			MMG_patch_rubber_norway,		                    *,		1000,		100
+			MMG_patch_rubber_ukraine,		                    *,		1000,		100
+			MMG_patch_rubber_bulgaria,		                	*,		1000,		100
+			MMG_patch_rubber_switzerland,		                *,		1000,		100
+			MMG_patch_rubber_czech_republic,		            *,		1000,		100
+			MMG_patch_rubber_denmark,		                    *,		1000,		100
+			MMG_patch_rubber_england,		                    *,		1000,		100
+			MMG_patch_rubber_finland,		               		*,		1000,		100
+			MMG_patch_rubber_france,		                	*,		1000,		100
+			MMG_patch_rubber_greece,		                    *,		1000,		100
+			MMG_patch_rubber_netherlands,		                *,		1000,		100
+			MMG_patch_rubber_poland,		                     *,		1000,		100
+			MMG_patch_rubber_south_africa,		                 *,		1000,		100
+			MMG_patch_rubber_slovakia,		                    *,		1000,		100
+			MMG_patch_rubber_uk,		                    *,		1000,		100
+			MMG_patch_rubber_usa,		                    *,		1000,		100
+			MMG_patch_rubber_bra,		                    *,		1000,		100
+			MMG_patch_rubber_can,		                    *,		1000,		100
+			MMG_patch_rubber_chl,		                    *,		1000,		100
+			MMG_patch_rubber_cro,		                    *,		1000,		100
+			MMG_patch_rubber_irl,		                    *,		1000,		100
+			MMG_patch_rubber_nzl,		                    *,		1000,		100
+			MMG_patch_rubber_rou,		                    *,		1000,		100
+			MMG_patch_rubber_tur,		                    *,		1000,		100
+			MMG_patch_rubber_apos,		                    *,		1000,		100
+			MMG_patch_rubber_bpos,		                    *,		1000,		100
+			MMG_patch_rubber_abpos,		                    *,		1000,		100
+			MMG_patch_rubber_0pos,		                    *,		1000,		100
+			MMG_patch_rubber_aneg,		                    *,		1000,		100
+			MMG_patch_rubber_bneg,		                    *,		1000,		100
+			MMG_patch_rubber_abneg,		                    *,		1000,		100
+			MMG_patch_rubber_0neg,		                    *,		1000,		100
+			
+			<Category> MMG Patches Fabric
+			MMG_patch_fabric_dayz,		                        *,		1000,		100
+			MMG_patch_fabric_511,		                        *,		1000,		100
+			MMG_patch_fabric_driver,		                    *,		1000,		100
+			MMG_patch_fabric_medic,		                        *,		1000,		100
+			MMG_patch_fabric_pilot,		                        *,		1000,		100
+			MMG_patch_fabric_toxic,		                        *,		1000,		100
+
+	
+<Trader> Vehicles Trader
+	<Category> Vehicles
+		OffroadHatchback,		V,		14000,	8000	// Use VNK instead of V as Quantity to not give a Vehicle Key when bought.
+		OffroadHatchback_Blue,	V,		14000,	8000
+		OffroadHatchback_White,	V,		14000,	8000
+		Hatchback_02,			V,		16000,	9600
+		Hatchback_02_Blue,		V,		16000,	9600
+		Hatchback_02_Black,		V,		16000,	9600
+		Sedan_02,				V,		18000,	10200
+		Sedan_02_Red,			V,		18000,	10200
+		Sedan_02_Grey,			V,		18000,	10200
+		CivilianSedan,			V,		20000,	11000
+		CivilianSedan_Wine,		V,		20000,	11000
+		CivilianSedan_Black,	V,		20000,	11000
+		Truck_01_Covered,		V,		50000,	30000
+        Truck_01_Covered_Blue,	V,		50000,	30000
+        Truck_01_Covered_Orange,V,		50000,	30000
+		CrSk_Hummer_H2_6x6_Pink, V, 1000, 1000
+		CrSk_Hummer_H2_6x6_Space, V, 1000, 1000
+		CrSk_Hummer_H2_6x6_Camo, V, 1000, 1000
+		CrSk_Hummer_H2_6x6_Black, V, 1000, 1000
+		CrSk_Hummer_H2_6x6, V, 1000, 1000
+	
+	<Category> Vehicle Parts
+		HeadlightH7_Box,		*,		30,		15
+		SparkPlug,				*,		60,		40
+		EngineOil,				*,		70,		40
+		CarBattery,				*,		100,	50
+		TruckBattery,			*,		180,	100
+		CarRadiator,			*,		200,	100
+		TireRepairKit,			*,		220,	100
+		HatchbackHood,						*,		300,	100
+		HatchbackHood_Blue,					*,		300,	100
+		HatchbackHood_White,				*,		300,	100
+		HatchbackHood_GreenRust,			*,		300,	100
+		HatchbackHood_BlueRust,				*,		300,	100
+		HatchbackHood_WhiteRust,			*,		300,	100
+		HatchbackTrunk,						*,		380,	130
+		HatchbackTrunk_Blue,				*,		380,	130
+		HatchbackTrunk_White,				*,		380,	130
+		HatchbackTrunk_GreenRust,			*,		380,	130
+		HatchbackTrunk_BlueRust,			*,		380,	130
+		HatchbackTrunk_WhiteRust,			*,		380,	130
+		HatchbackDoors_Driver,				*,		450,	160
+		HatchbackDoors_Driver_Blue,			*,		450,	160
+		HatchbackDoors_Driver_White,		*,		450,	160
+		HatchbackDoors_Driver_GreenRust,	*,		450,	160
+		HatchbackDoors_Driver_BlueRust,		*,		450,	160
+		HatchbackDoors_Driver_WhiteRust,	*,		450,	160
+		HatchbackDoors_CoDriver,			*,		450,	160
+		HatchbackDoors_CoDriver_Blue,		*,		450,	160
+		HatchbackDoors_CoDriver_White,		*,		450,	160
+		HatchbackDoors_CoDriver_GreenRust,	*,		450,	160
+		HatchbackDoors_CoDriver_BlueRust,	*,		450,	160
+		HatchbackDoors_CoDriver_WhiteRust,	*,		450,	160
+		HatchbackWheel,						*,		500,	100
+		Hatchback_02_Hood,				*,		300,	100
+		Hatchback_02_Hood_Black,		*,		300,	100
+		Hatchback_02_Hood_Blue,			*,		300,	100
+		Hatchback_02_Hood_RedRust,		*,		300,	100
+		Hatchback_02_Hood_BlackRust,	*,		300,	100
+		Hatchback_02_Hood_BlueRust,		*,		300,	100
+		Hatchback_02_Trunk,				*,		380,	130
+		Hatchback_02_Trunk_Black,		*,		380,	130
+		Hatchback_02_Trunk_Blue,		*,		380,	130
+		Hatchback_02_Trunk_RedRust,		*,		380,	130
+		Hatchback_02_Trunk_BlackRust,	*,		380,	130
+		Hatchback_02_Trunk_BlueRust,	*,		380,	130
+		Hatchback_02_Door_1_1,			*,		450,	160
+		Hatchback_02_Door_1_1_Black,	*,		450,	160
+		Hatchback_02_Door_1_1_Blue,		*,		450,	160
+		Hatchback_02_Door_1_1_RedRust,	*,		450,	160
+		Hatchback_02_Door_1_1_BlackRust,*,		450,	160
+		Hatchback_02_Door_1_1_BlueRust,	*,		450,	160
+		Hatchback_02_Door_1_2,			*,		450,	160
+		Hatchback_02_Door_1_2_Black,	*,		450,	160
+		Hatchback_02_Door_1_2_Blue,		*,		450,	160
+		Hatchback_02_Door_1_2_RedRust,	*,		450,	160
+		Hatchback_02_Door_1_2_BlackRust,*,		450,	160
+		Hatchback_02_Door_1_2_BlueRust,	*,		450,	160
+		Hatchback_02_Door_2_1,			*,		450,	160
+		Hatchback_02_Door_2_1_Black,	*,		450,	160
+		Hatchback_02_Door_2_1_Blue,		*,		450,	160
+		Hatchback_02_Door_2_1_RedRust,	*,		450,	160
+		Hatchback_02_Door_2_1_BlackRust,*,		450,	160
+		Hatchback_02_Door_2_1_BlueRust,	*,		450,	160
+		Hatchback_02_Door_2_2,			*,		450,	160
+		Hatchback_02_Door_2_2_Black,	*,		450,	160
+		Hatchback_02_Door_2_2_Blue,		*,		450,	160
+		Hatchback_02_Door_2_2_RedRust,	*,		450,	160
+		Hatchback_02_Door_2_2_BlackRust,*,		450,	160
+		Hatchback_02_Door_2_2_BlueRust,	*,		450,	160
+		Hatchback_02_Wheel,				*,		500,	100
+		Sedan_02_Hood,					*,		300,	100
+		Sedan_02_Hood_Red,				*,		300,	100
+		Sedan_02_Hood_Grey,				*,		300,	100
+		Sedan_02_Hood_YellowRust,		*,		300,	100
+		Sedan_02_Hood_RedRust,			*,		300,	100
+		Sedan_02_Hood_GreyRust,			*,		300,	100
+		Sedan_02_Trunk,					*,		450,	150
+		Sedan_02_Trunk_Red,				*,		450,	150
+		Sedan_02_Trunk_Grey,			*,		450,	150
+		Sedan_02_Trunk_YellowRust,		*,		450,	150
+		Sedan_02_Trunk_RedRust,			*,		450,	150
+		Sedan_02_Trunk_GreyRust,		*,		450,	150
+		Sedan_02_Door_1_1,				*,		450,	160
+		Sedan_02_Door_1_1_Red,			*,		450,	160
+		Sedan_02_Door_1_1_Grey,			*,		450,	160
+		Sedan_02_Door_1_1_YellowRust,	*,		450,	160
+		Sedan_02_Door_1_1_RedRust,		*,		450,	160
+		Sedan_02_Door_1_1_GreyRust,		*,		450,	160
+		Sedan_02_Door_1_2,				*,		450,	160
+		Sedan_02_Door_1_2_Red,			*,		450,	160
+		Sedan_02_Door_1_2_Grey,			*,		450,	160
+		Sedan_02_Door_1_2_YellowRust,	*,		450,	160
+		Sedan_02_Door_1_2_RedRust,		*,		450,	160
+		Sedan_02_Door_1_2_GreyRust,		*,		450,	160
+		Sedan_02_Door_2_1,				*,		450,	160
+		Sedan_02_Door_2_1_Red,			*,		450,	160
+		Sedan_02_Door_2_1_Grey,			*,		450,	160
+		Sedan_02_Door_2_1_YellowRust,	*,		450,	160
+		Sedan_02_Door_2_1_RedRust,		*,		450,	160
+		Sedan_02_Door_2_1_GreyRust,		*,		450,	160
+		Sedan_02_Door_2_2,				*,		450,	160  
+		Sedan_02_Door_2_2_Red,			*,		450,	160  
+		Sedan_02_Door_2_2_Grey,			*,		450,	160  
+		Sedan_02_Door_2_2_YellowRust,	*,		450,	160  
+		Sedan_02_Door_2_2_RedRust,		*,		450,	160  
+		Sedan_02_Door_2_2_GreyRust,		*,		450,	160  
+		Sedan_02_Wheel,					*,		500,	100
+		CivSedanHood,						*,		400,	140
+		CivSedanHood_Wine,					*,		400,	140
+		CivSedanHood_Black,					*,		400,	140
+		CivSedanHood_WhiteRust,				*,		400,	140
+		CivSedanHood_WineRust,				*,		400,	140
+		CivSedanHood_BlackRust,				*,		400,	140
+		CivSedanTrunk,						*,		450,	150
+		CivSedanTrunk_Wine,					*,		450,	150
+		CivSedanTrunk_Black,				*,		450,	150
+		CivSedanTrunk_WhiteRust,			*,		450,	150
+		CivSedanTrunk_WineRust,				*,		450,	150
+		CivSedanTrunk_BlackRust,			*,		450,	150
+		CivSedanDoors_Driver,				*,		500,	180
+		CivSedanDoors_Driver_Wine,			*,		500,	180
+		CivSedanDoors_Driver_Black,			*,		500,	180
+		CivSedanDoors_Driver_WhiteRust,		*,		500,	180
+		CivSedanDoors_Driver_WineRust,		*,		500,	180
+		CivSedanDoors_Driver_BlackRust,		*,		500,	180
+		CivSedanDoors_CoDriver,				*,		500,	180
+		CivSedanDoors_CoDriver_Wine,		*,		500,	180
+		CivSedanDoors_CoDriver_Black,		*,		500,	180
+		CivSedanDoors_CoDriver_WhiteRust,	*,		500,	180
+		CivSedanDoors_CoDriver_WineRust,	*,		500,	180
+		CivSedanDoors_CoDriver_BlackRust,	*,		500,	180
+		CivSedanDoors_BackLeft,				*,		500,	180
+		CivSedanDoors_BackLeft_Wine,		*,		500,	180
+		CivSedanDoors_BackLeft_Black,		*,		500,	180
+		CivSedanDoors_BackLeft_WhiteRust,	*,		500,	180
+		CivSedanDoors_BackLeft_WineRust,	*,		500,	180
+		CivSedanDoors_BackLeft_BlackRust,	*,		500,	180
+		CivSedanDoors_BackRight,			*,		500,	180
+		CivSedanDoors_BackRight_Wine,		*,		500,	180
+		CivSedanDoors_BackRight_Black,		*,		500,	180
+		CivSedanDoors_BackRight_WhiteRust,	*,		500,	180
+		CivSedanDoors_BackRight_WineRust,	*,		500,	180
+		CivSedanDoors_BackRight_BlackRust,	*,		500,	180
+		CivSedanWheel,						*,		600,	120
+		Truck_01_Hood,						*,		400,	140
+		Truck_01_Hood_Blue,					*,		400,	140
+        Truck_01_Hood_Orange,				*,		400,	140
+		Truck_01_Door_1_1,					*,		500,	180
+        Truck_01_Door_1_1_Blue,				*,		500,	180
+        Truck_01_Door_1_1_Orange,			*,		500,	180
+        Truck_01_Door_2_1,					*,		500,	180
+        Truck_01_Door_2_1_Blue,				*,		500,	180
+        Truck_01_Door_2_1_Orange,			*,		500,	180
+        Truck_01_Wheel,						*,		600,	120
+        Truck_01_WheelDouble,				*,		1000,	200
+
+	<VehicleParts> CrSk_Hummer_H2_6x6_Space
+		SparkPlug
+		CarBattery
+		CarRadiator
+		HeadlightH7
+		HeadlightH7
+		H26x6_dver_1_1_Space
+		H26x6_dver_1_2_Space
+		H26x6_dver_2_1_Space
+		H26x6_dver_2_2_Space
+		H26x6_bagazhnik_Space
+		H26x6_kapot_Space
+		H26x6_koleso
+		H26x6_koleso
+		H26x6_koleso
+		H26x6_koleso
+		H26x6_koleso
+		H26x6_koleso
+
+
+	<VehicleParts> CrSk_Hummer_H2_6x6_Camo
+		SparkPlug
+		CarBattery
+		CarRadiator
+		HeadlightH7
+		HeadlightH7
+		H26x6_dver_1_1_Camo
+		H26x6_dver_1_2_Camo
+		H26x6_dver_2_1_Camo
+		H26x6_dver_2_2_Camo
+		H26x6_bagazhnik_Camo
+		H26x6_kapot_Camo
+		H26x6_koleso
+		H26x6_koleso
+		H26x6_koleso
+		H26x6_koleso
+		H26x6_koleso
+		H26x6_koleso
+
+	<VehicleParts> CrSk_Hummer_H2_6x6_Black
+		SparkPlug
+		CarBattery
+		CarRadiator
+		HeadlightH7
+		HeadlightH7
+		H26x6_dver_1_1_Black
+		H26x6_dver_1_2_Black
+		H26x6_dver_2_1_Black
+		H26x6_dver_2_2_Black
+		H26x6_bagazhnik_Black
+		H26x6_kapot_Black
+		H26x6_koleso
+		H26x6_koleso
+		H26x6_koleso
+		H26x6_koleso
+		H26x6_koleso
+		H26x6_koleso
+
+	<VehicleParts> CrSk_Hummer_H2_6x6
+		SparkPlug
+		CarBattery
+		CarRadiator
+		HeadlightH7
+		HeadlightH7
+		H26x6_dver_1_1
+		H26x6_dver_1_2
+		H26x6_dver_2_1
+		H26x6_dver_2_2
+		H26x6_bagazhnik
+		H26x6_kapot
+		H26x6_koleso
+		H26x6_koleso
+		H26x6_koleso
+		H26x6_koleso
+		H26x6_koleso
+		H26x6_koleso 
+		
+	<Category> Keys
+		VehicleKeyDuplicate,	K,		2000,	-1 		// The choosen Classname here only gets displayed in the UI (Name/Description); Make Sure SellValue is set to -1
+		VehicleKeyLost,    		KL,    	5000,   -1		// The choosen Classname here only gets displayed in the UI (Name/Description); Make Sure SellValue is set to -1
+
+	<Category> Tools
+		HydraulicJack,			*,		1000,	700
+		TrafficCone,			*,		100,	70
+		
+		
+//<OpenFile> FileName.txt								// Links to another File; Must be right above <FileEnd>!
+<FileEnd>												// This has to be on the End of this File and is very importand!
