@@ -213,7 +213,7 @@
 	Truck_01_WheelDouble
 
 <VehicleParts>Truck_01_Covered_Blue
-     TruckBattery
+    TruckBattery
 	Truck_01_Wheel
 	Truck_01_WheelDouble
 	Truck_01_Hood_Blue
@@ -229,7 +229,7 @@
 	Truck_01_WheelDouble
 
 <VehicleParts>Truck_01_Covered_Orange
-     TruckBattery
+    TruckBattery
 	Truck_01_Wheel
 	Truck_01_WheelDouble
 	Truck_01_Hood_Orange
@@ -245,72 +245,72 @@
 	Truck_01_WheelDouble
 	
 <VehicleParts>CrSk_Hummer_H2_6x6
-	SparkPlug,
-	CarBattery,
-	CarRadiator,
-	HeadlightH7,
-	HeadlightH7,
-	H26x6_dver_1_1,
-	H26x6_dver_1_2,
-	H26x6_dver_2_1,
-	H26x6_dver_2_2,
-	H26x6_bagazhnik",
+	SparkPlug
+	CarBattery
+	CarRadiator
+	HeadlightH7
+	HeadlightH7
+	H26x6_dver_1_1
+	H26x6_dver_1_2
+	H26x6_dver_2_1
+	H26x6_dver_2_2
+	H26x6_bagazhnik
 	H26x6_kapot,
-	H26x6_koleso,
-	H26x6_koleso,
-	H26x6_koleso,
-	H26x6_koleso,
-	H26x6_koleso,
+	H26x6_koleso
+	H26x6_koleso
+	H26x6_koleso
+	H26x6_koleso
+	H26x6_koleso
 	H26x6_koleso
 
 
 <VehicleParts>CrSk_Hummer_H2_6x6_Pink
 	SparkPlug,
-	CarBattery,
-	CarRadiator,
-	HeadlightH7,
-	HeadlightH7,
-	H26x6_dver_1_1,
-	H26x6_dver_1_2,
-	H26x6_dver_2_1,
-	H26x6_dver_2_2,
-	H26x6_bagazhnik",
-	H26x6_kapot,
-	H26x6_koleso,
-	H26x6_koleso,
-	H26x6_koleso,
-	H26x6_koleso,
-	H26x6_koleso,
+	CarBattery
+	CarRadiator
+	HeadlightH7
+	HeadlightH7
+	H26x6_dver_1_1
+	H26x6_dver_1_2
+	H26x6_dver_2_1
+	H26x6_dver_2_2
+	H26x6_bagazhnik
+	H26x6_kapot
+	H26x6_koleso
+	H26x6_koleso
+	H26x6_koleso
+	H26x6_koleso
+	H26x6_koleso
 	H26x6_koleso
 
 <VehicleParts>CrSk_Hummer_H2_6x6_Space
 	SparkPlug,
-	CarBattery,
-	CarRadiator,
-	HeadlightH7,
-	HeadlightH7,
-	H26x6_dver_1_1,
-	H26x6_dver_1_2,
-	H26x6_dver_2_1,
-	H26x6_dver_2_2,
-	H26x6_bagazhnik",
-	H26x6_kapot,
-	H26x6_koleso,
-	H26x6_koleso,
-	H26x6_koleso,
-	H26x6_koleso,
-	H26x6_koleso,
+	CarBattery
+	CarRadiator
+	HeadlightH7
+	HeadlightH7
+	H26x6_dver_1_1
+	H26x6_dver_1_2
+	H26x6_dver_2_1
+	H26x6_dver_2_2
+	H26x6_bagazhnik
+	H26x6_kapot
+	H26x6_koleso
+	H26x6_koleso
+	H26x6_koleso
+	H26x6_koleso
+	H26x6_koleso
 	H26x6_koleso
 
 <VehicleParts>Expansion_Landrover
-	SparkPlug,
-	CarBattery,
-	CarRadiator,
-	HeadlightH7,
-	HeadlightH7,
-	Expansion_Landrover_Driverdoor,
-	Expansion_Landrover_Left,
-	Expansion_Landrover_Right,
+	SparkPlug
+	CarBattery
+	CarRadiator
+	HeadlightH7
+	HeadlightH7
+	Expansion_Landrover_Driverdoor
+	Expansion_Landrover_Left
+	Expansion_Landrover_Right
 	Expansion_Landrover_Codriverdoor
 
 
