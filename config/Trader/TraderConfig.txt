@@ -2217,11 +2217,12 @@
 		Truck_01_Covered,		V,		50000,	30000
         Truck_01_Covered_Blue,	V,		50000,	30000
         Truck_01_Covered_Orange,V,		50000,	30000
-		CrSk_Hummer_H2_6x6_Pink, V, 1000, 1000
-		CrSk_Hummer_H2_6x6_Space, V, 1000, 1000
-		CrSk_Hummer_H2_6x6_Camo, V, 1000, 1000
-		CrSk_Hummer_H2_6x6_Black, V, 1000, 1000
-		CrSk_Hummer_H2_6x6, V, 1000, 1000
+		CrSk_Hummer_H2_6x6_Pink, V, 25000, 1000
+		CrSk_Hummer_H2_6x6_Space, V, 25000, 1000
+		CrSk_Hummer_H2_6x6_Camo, V, 25000, 1000
+		CrSk_Hummer_H2_6x6_Black, V, 25000, 1000
+		CrSk_Hummer_H2_6x6, V, 25000, 1000
+		Expansion_Landrover,	V,	15000,	10000
 	
 	<Category> Vehicle Parts
 		HeadlightH7_Box,		*,		30,		15
@@ -2378,83 +2379,6 @@
         Truck_01_Door_2_1_Orange,			*,		500,	180
         Truck_01_Wheel,						*,		600,	120
         Truck_01_WheelDouble,				*,		1000,	200
-
-	<VehicleParts> CrSk_Hummer_H2_6x6_Space
-		SparkPlug
-		CarBattery
-		CarRadiator
-		HeadlightH7
-		HeadlightH7
-		H26x6_dver_1_1_Space
-		H26x6_dver_1_2_Space
-		H26x6_dver_2_1_Space
-		H26x6_dver_2_2_Space
-		H26x6_bagazhnik_Space
-		H26x6_kapot_Space
-		H26x6_koleso
-		H26x6_koleso
-		H26x6_koleso
-		H26x6_koleso
-		H26x6_koleso
-		H26x6_koleso
-
-
-	<VehicleParts> CrSk_Hummer_H2_6x6_Camo
-		SparkPlug
-		CarBattery
-		CarRadiator
-		HeadlightH7
-		HeadlightH7
-		H26x6_dver_1_1_Camo
-		H26x6_dver_1_2_Camo
-		H26x6_dver_2_1_Camo
-		H26x6_dver_2_2_Camo
-		H26x6_bagazhnik_Camo
-		H26x6_kapot_Camo
-		H26x6_koleso
-		H26x6_koleso
-		H26x6_koleso
-		H26x6_koleso
-		H26x6_koleso
-		H26x6_koleso
-
-	<VehicleParts> CrSk_Hummer_H2_6x6_Black
-		SparkPlug
-		CarBattery
-		CarRadiator
-		HeadlightH7
-		HeadlightH7
-		H26x6_dver_1_1_Black
-		H26x6_dver_1_2_Black
-		H26x6_dver_2_1_Black
-		H26x6_dver_2_2_Black
-		H26x6_bagazhnik_Black
-		H26x6_kapot_Black
-		H26x6_koleso
-		H26x6_koleso
-		H26x6_koleso
-		H26x6_koleso
-		H26x6_koleso
-		H26x6_koleso
-
-	<VehicleParts> CrSk_Hummer_H2_6x6
-		SparkPlug
-		CarBattery
-		CarRadiator
-		HeadlightH7
-		HeadlightH7
-		H26x6_dver_1_1
-		H26x6_dver_1_2
-		H26x6_dver_2_1
-		H26x6_dver_2_2
-		H26x6_bagazhnik
-		H26x6_kapot
-		H26x6_koleso
-		H26x6_koleso
-		H26x6_koleso
-		H26x6_koleso
-		H26x6_koleso
-		H26x6_koleso 
 		
 	<Category> Keys
 		VehicleKeyDuplicate,	K,		2000,	-1 		// The choosen Classname here only gets displayed in the UI (Name/Description); Make Sure SellValue is set to -1

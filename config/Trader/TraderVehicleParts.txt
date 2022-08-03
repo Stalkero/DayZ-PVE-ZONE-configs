@@ -302,6 +302,16 @@
 	H26x6_koleso,
 	H26x6_koleso
 
+<VehicleParts>Expansion_Landrover
+	SparkPlug,
+	CarBattery,
+	CarRadiator,
+	HeadlightH7,
+	HeadlightH7,
+	Expansion_Landrover_Driverdoor,
+	Expansion_Landrover_Left,
+	Expansion_Landrover_Right,
+	Expansion_Landrover_Codriverdoor
 
 
 	
