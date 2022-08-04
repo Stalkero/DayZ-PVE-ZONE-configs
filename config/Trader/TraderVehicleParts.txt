@@ -196,7 +196,7 @@
 	Sedan_02_Wheel
 	Sedan_02_Wheel
 
-<VehicleParts>Truck_01_Covered
+<VehicleParts> Truck_01_Covered
     TruckBattery
 	Truck_01_Door_1_1
 	Truck_01_Door_2_1
@@ -212,7 +212,7 @@
 	Truck_01_WheelDouble
 	Truck_01_WheelDouble
 
-<VehicleParts>Truck_01_Covered_Blue
+<VehicleParts> Truck_01_Covered_Blue
     TruckBattery
 	Truck_01_Wheel
 	Truck_01_WheelDouble
@@ -228,7 +228,7 @@
 	Truck_01_WheelDouble
 	Truck_01_WheelDouble
 
-<VehicleParts>Truck_01_Covered_Orange
+<VehicleParts> Truck_01_Covered_Orange
     TruckBattery
 	Truck_01_Wheel
 	Truck_01_WheelDouble
@@ -244,7 +244,7 @@
 	Truck_01_WheelDouble
 	Truck_01_WheelDouble
 	
-<VehicleParts>CrSk_Hummer_H2_6x6
+<VehicleParts> CrSk_Hummer_H2_6x6
 	SparkPlug
 	CarBattery
 	CarRadiator
@@ -264,7 +264,7 @@
 	H26x6_koleso
 
 
-<VehicleParts>CrSk_Hummer_H2_6x6_Pink
+<VehicleParts> CrSk_Hummer_H2_6x6_Pink
 	SparkPlug,
 	CarBattery
 	CarRadiator
@@ -283,7 +283,7 @@
 	H26x6_koleso
 	H26x6_koleso
 
-<VehicleParts>CrSk_Hummer_H2_6x6_Space
+<VehicleParts> CrSk_Hummer_H2_6x6_Space
 	SparkPlug,
 	CarBattery
 	CarRadiator
@@ -302,7 +302,7 @@
 	H26x6_koleso
 	H26x6_koleso
 
-<VehicleParts>Expansion_Landrover
+<VehicleParts> Expansion_Landrover
 	SparkPlug
 	CarBattery
 	CarRadiator
@@ -313,6 +313,136 @@
 	Expansion_Landrover_Right
 	Expansion_Landrover_Codriverdoor
 
+
+<VehicleParts> uazSoba
+	SparkPlug
+	CarBattery
+	CarRadiator
+	HeadlightH7
+	HeadlightH7
+	Uaz_Hood
+	Uaz_Driver
+	Uaz_CoDriver
+	Uaz_Cargo1
+	Uaz_Cargo2
+	uazWheel
+	uazWheel
+	uazWheel
+	uazWheel
+	uazWheel
+
+<VehicleParts> sobgaz
+	SparkPlug
+	TruckBattery
+	CarRadiator
+	HeadlightH7
+	HeadlightH7
+	gazDoors_Driver
+	gazDoors_CoDriver
+	gazWheel
+	gazWheel
+	gazWheel
+	gazWheel
+	gazWheel
+
+<VehicleParts> sobgaz_Plat
+	SparkPlug
+	TruckBattery
+	CarRadiator
+	HeadlightH7
+	HeadlightH7
+	gazDoors_Driver
+	gazDoors_CoDriver
+	gazWheel
+	gazWheel
+	gazWheel
+	gazWheel
+	gazWheel
+
+<VehicleParts> Hmwvee
+	SparkPlug
+	CarBattery
+	CarRadiator
+	HeadlightH7
+	HeadlightH7
+	Hmwvee_hood
+	HmwveeDoors_Driver
+	HmwveeDoors_CoDriver
+	HmwveeDoors_Cargo1
+	HmwveeDoors_Cargo2
+	HmwveeWheel
+	HmwveeWheel
+	HmwveeWheel
+	HmwveeWheel
+	HmwveeWheel
+
+<VehicleParts> Hmwvee_34
+	SparkPlug
+	CarBattery
+	CarRadiator
+	HeadlightH7
+	HeadlightH7
+	Hmwvee_34_hood
+	HmwveeDoors_34_Driver
+	HmwveeDoors_34_CoDriver
+	HmwveeDoors_34_Cargo1
+	HmwveeDoors_34_Cargo2
+	HmwveeWheel
+	HmwveeWheel
+	HmwveeWheel
+	HmwveeWheel
+	HmwveeWheel
+
+<VehicleParts> Hmwvee_Olive
+	SparkPlug
+	CarBattery
+	CarRadiator
+	HeadlightH7
+	HeadlightH7
+	Hmwvee_Olive_hood
+	HmwveeDoors_Olive_Driver
+	HmwveeDoors_Olive_CoDriver
+	HmwveeDoors_Olive_Cargo1
+	HmwveeDoors_Olive_Cargo2
+	HmwveeWheel
+	HmwveeWheel
+	HmwveeWheel
+	HmwveeWheel
+	HmwveeWheel
+
+<VehicleParts> Hmwvee_Automn
+	SparkPlug
+	CarBattery
+	CarRadiator
+	HeadlightH7
+	HeadlightH7
+	Hmwvee_Automn_hood
+	HmwveeDoors_Automn_Driver
+	HmwveeDoors_Automn_CoDriver
+	HmwveeDoors_Automn_Cargo1
+	HmwveeDoors_Automn_Cargo2
+	HmwveeWheel
+	HmwveeWheel
+	HmwveeWheel
+	HmwveeWheel
+	HmwveeWheel
+
+<VehicleParts> Hmwvee_Desert
+	SparkPlug
+	CarBattery
+	CarRadiator
+	HeadlightH7
+	HeadlightH7
+	Hmwvee_Desert_hood
+	HmwveeDoors_Desert_Driver
+	HmwveeDoors_Desert_CoDriver
+	HmwveeDoors_Desert_Cargo1
+	HmwveeDoors_Desert_Cargo2
+	HmwveeWheel
+	HmwveeWheel
+	HmwveeWheel
+	HmwveeWheel
+	HmwveeWheel
 
 	
 //<OpenFile> FileName.txt			// Links to another File; Must be right above <FileEnd>!

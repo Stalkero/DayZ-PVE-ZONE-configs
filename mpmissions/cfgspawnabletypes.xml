@@ -2929,6 +2929,371 @@
         </attachments>
 	</type>
 
+	<type name="Hmwvee">
+		<attachments chance="1.00">
+			<item name="HmwveeWheel" chance="0.25" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeWheel" chance="0.25" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeWheel" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeWheel" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeWheel" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="CarBattery" chance="0.20" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="CarRadiator" chance="0.20" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="Sparkplug" chance="0.20" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HeadlightH7" chance="0.40" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HeadlightH7" chance="0.40" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="Hmwvee_hood" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeDoors_Driver" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeDoors_CoDriver" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeDoors_Cargo1" chance="0.15" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeDoors_Cargo2" chance="0.15" />
+		</attachments>
+	</type>
+	
+	<type name="Hmwvee_34">
+		<attachments chance="1.00">
+			<item name="HmwveeWheel" chance="0.25" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeWheel" chance="0.25" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeWheel" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeWheel" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeWheel" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="CarBattery" chance="0.20" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="CarRadiator" chance="0.20" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="Sparkplug" chance="0.20" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HeadlightH7" chance="0.40" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HeadlightH7" chance="0.40" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="Hmwvee_34_hood" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeDoors_34_Driver" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeDoors_34_CoDriver" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeDoors_34_Cargo1" chance="0.15" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeDoors_34_Cargo2" chance="0.15" />
+		</attachments>
+	</type>
+
+	<type name="Hmwvee_Olive">
+		<attachments chance="1.00">
+			<item name="HmwveeWheel" chance="0.25" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeWheel" chance="0.25" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeWheel" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeWheel" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeWheel" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="CarBattery" chance="0.20" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="CarRadiator" chance="0.20" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="Sparkplug" chance="0.20" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HeadlightH7" chance="0.40" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HeadlightH7" chance="0.40" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="Hmwvee_Olive_hood" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeDoors_Olive_Driver" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeDoors_Olive_CoDriver" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeDoors_Olive_Cargo1" chance="0.15" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeDoors_Olive_Cargo2" chance="0.15" />
+		</attachments>
+	</type>
+
+	<type name="Hmwvee_Automn">
+		<attachments chance="1.00">
+			<item name="HmwveeWheel" chance="0.25" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeWheel" chance="0.25" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeWheel" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeWheel" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeWheel" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="CarBattery" chance="0.20" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="CarRadiator" chance="0.20" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="Sparkplug" chance="0.20" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HeadlightH7" chance="0.40" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HeadlightH7" chance="0.40" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="Hmwvee_Automn_hood" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeDoors_Automn_Driver" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeDoors_Automn_CoDriver" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeDoors_Automn_Cargo1" chance="0.15" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeDoors_Automn_Cargo2" chance="0.15" />
+		</attachments>
+	</type>
+
+	<type name="Hmwvee_Desert">
+		<attachments chance="1.00">
+			<item name="HmwveeWheel" chance="0.25" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeWheel" chance="0.25" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeWheel" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeWheel" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeWheel" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="CarBattery" chance="0.20" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="CarRadiator" chance="0.20" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="Sparkplug" chance="0.20" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HeadlightH7" chance="0.40" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HeadlightH7" chance="0.40" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="Hmwvee_Desert_hood" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeDoors_Desert_Driver" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeDoors_Desert_CoDriver" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeDoors_Desert_Cargo1" chance="0.15" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="HmwveeDoors_Desert_Cargo2" chance="0.15" />
+		</attachments>
+	</type>
+
+	<type name="uazSoba">
+		<attachments chance="1.00">
+			<item name="uazWheel" chance="0.25" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="uazWheel" chance="0.25" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="uazWheel" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="uazWheel" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="uazWheel" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="CarBattery" chance="0.20" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="CarRadiator" chance="0.20" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="Sparkplug" chance="0.20" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HeadlightH7" chance="0.40" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HeadlightH7" chance="0.40" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="Uaz_Hood" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="Uaz_Cargo2" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="Uaz_Cargo1" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="Uaz_CoDriver" chance="0.15" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Uaz_Driver" chance="0.15" />
+		</attachments>
+	</type>
+
+	<type name="sobgaz">
+		<attachments chance="1.00">
+			<item name="gazWheel" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="gazWheel" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="gazWheel" chance="0.10" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="gazWheel" chance="0.10" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="gazWheel" chance="0.10" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="CarRadiator" chance="0.20" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="TruckBattery" chance="0.20" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="Sparkplug" chance="0.20" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HeadlightH7" chance="0.40" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HeadlightH7" chance="0.40" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="gazDoors_Driver" chance="0.25" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="gazDoors_CoDriver" chance="0.25" />
+        </attachments>
+	</type>
+
+	<type name="sobgaz_Plat">
+		<attachments chance="1.00">
+			<item name="gazWheel" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="gazWheel" chance="0.15" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="gazWheel" chance="0.10" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="gazWheel" chance="0.10" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="gazWheel" chance="0.10" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="CarRadiator" chance="0.20" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="TruckBattery" chance="0.20" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="Sparkplug" chance="0.20" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HeadlightH7" chance="0.40" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="HeadlightH7" chance="0.40" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="gazDoors_Driver" chance="0.25" />
+        </attachments>
+		<attachments chance="1.00">
+			<item name="gazDoors_CoDriver" chance="0.25" />
+        </attachments>
+	</type>
 
 
 	<!--START OF ZOMBIES  -->

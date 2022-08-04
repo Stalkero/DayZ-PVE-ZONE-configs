@@ -2223,6 +2223,14 @@
 		CrSk_Hummer_H2_6x6_Black, V, 25000, 1000
 		CrSk_Hummer_H2_6x6, V, 25000, 1000
 		Expansion_Landrover,	V,	15000,	10000
+		uazSoba,	V,	44000,		22000
+		Hmwvee,		V,	44000,		22000
+		Hmwvee_34,	V,	44000,		22000
+		Hmwvee_Olive,	V,	44000,		22000
+		Hmwvee_Automn,	V,	44000,		22000
+		Hmwvee_Desert,	V,	44000,		22000
+		sobgaz,		V,	56000,		28000
+		sobgaz_Plat,	V,	56000,		28000
 	
 	<Category> Vehicle Parts
 		HeadlightH7_Box,		*,		30,		15
@@ -2379,6 +2387,56 @@
         Truck_01_Door_2_1_Orange,			*,		500,	180
         Truck_01_Wheel,						*,		600,	120
         Truck_01_WheelDouble,				*,		1000,	200
+
+	<Category> Modded
+		H26x6_dver_1_1,						*,		1000,	100
+		H26x6_dver_1_2,						*,		1000,	100
+		H26x6_dver_2_1,						*,		1000,	100
+		H26x6_dver_2_2,						*,		1000,	100
+		H26x6_bagazhnik,					*,		1000,	100
+		H26x6_kapot,						*,		1000,	100
+		H26x6_koleso,						*,		1000,	100
+		Expansion_Landrover_Driverdoor,		*,		1000,	100
+		Expansion_Landrover_Left,			*,		1000,	100
+		Expansion_Landrover_Right,			*,		1000,	100
+		Expansion_Landrover_Codriverdoor,	*,		1000,	100
+		uazWheel,			*,	1500,	75
+		Uaz_Hood,			*,	1500,	75
+		Uaz_Driver,			*,	1500,	75
+		Uaz_CoDriver,			*,	1500,	75
+		Uaz_Cargo1,			*,	1500,	75
+		Uaz_Cargo2,			*,	1500,	75
+		gazWheel,			*,	2000,	100
+		gazDoors_Driver,		*,	2000,	100
+		gazDoors_CoDriver,		*,	2000,	100
+		HmwveeWheel,			*,	1500,	75
+		Hmwvee_hood,			*,	1500,	75
+		HmwveeDoors_Driver,		*,	1500,	75
+		HmwveeDoors_CoDriver,		*,	1500,	75
+		HmwveeDoors_Cargo1,		*,	1500,	75
+		HmwveeDoors_Cargo2,		*,	1500,	75
+		Hmwvee_34_hood,			*,	1500,	75
+		HmwveeDoors_34_Driver,		*,	1500,	75
+		HmwveeDoors_34_CoDriver,	*,	1500,	75
+		HmwveeDoors_34_Cargo1,		*,	1500,	75
+		HmwveeDoors_34_Cargo2,		*,	1500,	75
+		Hmwvee_Olive_hood,		*,	1500,	75
+		HmwveeDoors_Olive_Driver,	*,	1500,	75
+		HmwveeDoors_Olive_CoDriver,	*,	1500,	75
+		HmwveeDoors_Olive_Cargo1,	*,	1500,	75
+		HmwveeDoors_Olive_Cargo2,	*,	1500,	75
+		Hmwvee_Automn_hood,		*,	1500,	75
+		HmwveeDoors_Automn_Driver,	*,	1500,	75
+		HmwveeDoors_Automn_CoDriver,	*,	1500,	75
+		HmwveeDoors_Automn_Cargo1,	*,	1500,	75
+		HmwveeDoors_Automn_Cargo2,	*,	1500,	75
+		Hmwvee_Desert_hood,		*,	1500,	75
+		HmwveeDoors_Desert_Driver,	*,	1500,	75
+		HmwveeDoors_Desert_CoDriver,	*,	1500,	75
+		HmwveeDoors_Desert_Cargo1,	*,	1500,	75
+		HmwveeDoors_Desert_Cargo2,	*,	1500,	75
+
+
 		
 	<Category> Keys
 		VehicleKeyDuplicate,	K,		2000,	-1 		// The choosen Classname here only gets displayed in the UI (Name/Description); Make Sure SellValue is set to -1
