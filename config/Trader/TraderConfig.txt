@@ -2237,6 +2237,7 @@
 		SparkPlug,				*,		60,		40
 		EngineOil,				*,		70,		40
 		CarBattery,				*,		100,	50
+		ExpansionHelicopterBattery,	*,	1,	1000
 		TruckBattery,			*,		180,	100
 		CarRadiator,			*,		200,	100
 		TireRepairKit,			*,		220,	100
