@@ -2395,6 +2395,7 @@
 		Expansion_Landrover_Left,			*,		1000,	500
 		Expansion_Landrover_Right,			*,		1000,	500
 		Expansion_Landrover_Codriverdoor,	*,		1000,	500
+		Expansion_Landrover_Hood,			*,		1000,	500
 		uazWheel,							*,		1500,	400
 		Uaz_Hood,							*,		1500,	400
 		Uaz_Driver,							*,		1500,	400

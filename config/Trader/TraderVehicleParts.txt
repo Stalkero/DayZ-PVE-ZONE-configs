@@ -313,6 +313,7 @@
 	Expansion_Landrover_Right
 	Expansion_Landrover_Codriverdoor
 	Expansion_Landrover_Trunk
+	Expansion_Landrover_Hood
 	Expansion_Landrover_Wheel
 	Expansion_Landrover_Wheel
 	Expansion_Landrover_Wheel
