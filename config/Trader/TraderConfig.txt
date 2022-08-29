@@ -562,19 +562,20 @@
 		SNAFUAlligator,                    W,		225000,			80000
 	
 	<Category> SWP Guns
-        SWP_ACR,                        W,       10000,    800
-		SWP_LVOA,                       W,       10000,    800
-		SWP_M14_EBR,                    W,       10000,    800
-		SWP_Glock18,                    W,       10000,    800
-		SWP_M416,                       W,       10000,    800
-		SWP_M700,                       W,       10000,    1000
-		SWP_HK_MP7,                     W,       10000,    800
-		SWP_MPX,                        W,       10000,    800
-		SWP_Sig_P226,                   W,       10000,    800
-		SWP_PP19,                       W,       10000,    800
-		SWP_RO991,                      W,       10000,    1200
-		SWP_M417,                       W,       10000,    1200
-		SWP_SASS,,                      W,       10000,    1500
+        SWP_ACR,                        W,       10000,    8000
+		SWP_M14_EBR,                    W,       10000,    8000
+		SWP_Glock18,                    W,       10000,    8000
+		SWP_M416,                       W,       10000,    8000
+		SWP_M700,                       W,       10000,    8000
+		SWP_HK_MP7,                     W,       10000,    8000
+		SWP_MPX,                        W,       10000,    8000
+		SWP_Sig_P226,                   W,       10000,    8000
+		SWP_PP19,                       W,       10000,    8000
+		SWP_RO991,                      W,       10000,    8200
+		SWP_M417,                       W,       10000,    8200
+		SWP_SASS,                     	W,       10000,    8500
+		SWP_AWM,						W,		 90000,	   30000
+		SWP_LVOA_C,						W,		 10000,	   8000   
 		
 		
 <Trader> Weapon Supplies
@@ -1930,12 +1931,6 @@
 		MMG_headphones_green,   				*,   1800,  700
 		MMG_headphones_tan,   					*,   1800,  700
 		MMG_headphones_ucp,   					*,   1800,  700
-		MMG_ballistic_earcover_black,  			*,   1800,  700
-		MMG_ballistic_earcover_green,   		*,   1800,  700
-		MMG_ballistic_earcover_tan,   			*,   1800,  700
-		MMG_ballistic_earcover_alpine,   		*,   1800,  700
-		MMG_ballistic_earcover_erdl,  			*,   1800,  700
-		MMG_ballistic_earcover_multicamblack,   *,   1800,  700
 
 	<Category>MMG Holster:
 		MMG_Holster_black,   					*,   1800,  500

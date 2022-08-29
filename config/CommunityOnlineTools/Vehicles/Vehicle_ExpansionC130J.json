@@ -1,0 +1,15 @@
+{
+    "VehicleName": "Vehicle_ExpansionC130J",
+    "DisplayName": "",
+    "Parts": [
+        "Vehicle_ExpansionC130JWheel",
+        "Vehicle_ExpansionC130JWheel",
+        "Vehicle_ExpansionC130JWheel",
+        "Vehicle_ExpansionC130JWheel",
+        "ExpansionAircraftBattery",
+        "CarRadiator",
+        "GlowPlug",
+        "HeadlightH7",
+        "HeadlightH7"
+    ]
+}

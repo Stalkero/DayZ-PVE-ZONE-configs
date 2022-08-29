@@ -1,0 +1,17 @@
+{
+    "VehicleName": "Vehicle_ExpansionVodnik",
+    "DisplayName": "",
+    "Parts": [
+        "Vehicle_ExpansionVodnikWheel",
+        "Vehicle_ExpansionVodnikWheel",
+        "Vehicle_ExpansionVodnikWheel",
+        "Vehicle_ExpansionVodnikWheel",
+        "HeadlightH7",
+        "HeadlightH7",
+        "ExpansionVodnikDoorDriver",
+        "ExpansionVodnikDoorCoDriver",
+        "TruckBattery",
+        "CarRadiator",
+        "SparkPlug"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "VehicleName": "Vehicle_ExpansionUAZRoofless",
+    "DisplayName": "",
+    "Parts": [
+        "Vehicle_ExpansionUAZWheel",
+        "Vehicle_ExpansionUAZWheel",
+        "Vehicle_ExpansionUAZWheel",
+        "Vehicle_ExpansionUAZWheel",
+        "HeadlightH7",
+        "HeadlightH7",
+        "ExpansionUAZDoorDriver",
+        "ExpansionUAZDoorCoDriver",
+        "ExpansionUAZDoorCargo1",
+        "ExpansionUAZDoorCargo2",
+        "CarBattery",
+        "CarRadiator",
+        "SparkPlug"
+    ]
+}

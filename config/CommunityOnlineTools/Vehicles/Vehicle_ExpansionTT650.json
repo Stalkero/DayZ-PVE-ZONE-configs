@@ -1,0 +1,12 @@
+{
+    "VehicleName": "Vehicle_ExpansionTT650",
+    "DisplayName": "",
+    "Parts": [
+        "Vehicle_ExpansionTT650Wheel",
+        "Vehicle_ExpansionTT650Wheel",
+        "CarBattery",
+        "CarRadiator",
+        "GlowPlug",
+        "HeadlightH7"
+    ]
+}

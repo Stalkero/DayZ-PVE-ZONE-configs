@@ -1,0 +1,14 @@
+{
+    "VehicleName": "Vehicle_ExpansionMerlin",
+    "DisplayName": "",
+    "Parts": [
+        "ExpansionHelicopterBattery",
+        "ExpansionHydraulicHoses",
+        "ExpansionIgniterPlug",
+        "HeadlightH7",
+        "Vehicle_ExpansionMerlinFrontWheel",
+        "Vehicle_ExpansionMerlinFrontWheel",
+        "Vehicle_ExpansionMerlinBackWheel",
+        "Vehicle_ExpansionMerlinBackWheel"
+    ]
+}

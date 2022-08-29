@@ -1,0 +1,15 @@
+{
+    "VehicleName": "Vehicle_ExpansionBus",
+    "DisplayName": "",
+    "Parts": [
+        "Vehicle_ExpansionBusWheel",
+        "Vehicle_ExpansionBusWheel",
+        "Vehicle_ExpansionBusWheelDouble",
+        "Vehicle_ExpansionBusWheelDouble",
+        "HeadlightH7",
+        "HeadlightH7",
+        "TruckBattery",
+        "CarRadiator",
+        "GlowPlug"
+    ]
+}

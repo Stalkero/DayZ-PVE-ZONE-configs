@@ -284,7 +284,26 @@
 	H26x6_koleso
 
 <VehicleParts> CrSk_Hummer_H2_6x6_Space
-	SparkPlug,
+	SparkPlug
+	CarBattery
+	CarRadiator
+	HeadlightH7
+	HeadlightH7
+	H26x6_dver_1_1
+	H26x6_dver_1_2
+	H26x6_dver_2_1
+	H26x6_dver_2_2
+	H26x6_bagazhnik
+	H26x6_kapot
+	H26x6_koleso
+	H26x6_koleso
+	H26x6_koleso
+	H26x6_koleso
+	H26x6_koleso
+	H26x6_koleso
+
+<VehicleParts> CrSk_Hummer_H2_6x6_Black
+	SparkPlug
 	CarBattery
 	CarRadiator
 	HeadlightH7

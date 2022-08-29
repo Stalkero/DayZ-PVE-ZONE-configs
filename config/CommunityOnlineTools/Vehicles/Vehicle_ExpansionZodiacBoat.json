@@ -1,0 +1,9 @@
+{
+    "VehicleName": "Vehicle_ExpansionZodiacBoat",
+    "DisplayName": "",
+    "Parts": [
+        "CarRadiator",
+        "GlowPlug",
+        "TruckBattery"
+    ]
+}
